@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E7A6CBACED91265BDBC646C /* Pods_vcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E417000C101CF7AD12A464CE /* Pods_vcommerce.framework */; };
+		7CA5D2D68D474F80A508EB38 /* Pods_vcommerce_vcommerceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE8479ABBCAA712B6115EF0 /* Pods_vcommerce_vcommerceUITests.framework */; };
+		C16361FA9EA3B722BBCF67CD /* Pods_vcommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65774015FB12F9ED6149CEB3 /* Pods_vcommerceTests.framework */; };
+		ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA013E2522F49F00D15B93 /* AppDelegate.swift */; };
+		ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01402522F49F00D15B93 /* SceneDelegate.swift */; };
+		ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01422522F49F00D15B93 /* ContentView.swift */; };
+		ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA01442522F4A100D15B93 /* Assets.xcassets */; };
+		ECAA01482522F4A100D15B93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA01472522F4A100D15B93 /* Preview Assets.xcassets */; };
+		ECAA014B2522F4A100D15B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA01492522F4A100D15B93 /* LaunchScreen.storyboard */; };
+		ECAA01562522F4A100D15B93 /* vcommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01552522F4A100D15B93 /* vcommerceTests.swift */; };
+		ECAA01612522F4A100D15B93 /* vcommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */; };
+		ECAA0176252612F600D15B93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA0175252612F600D15B93 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECAA01522522F4A100D15B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECAA01332522F49F00D15B93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECAA013A2522F49F00D15B93;
+			remoteInfo = vcommerce;
+		};
+		ECAA015D2522F4A100D15B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECAA01332522F49F00D15B93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECAA013A2522F49F00D15B93;
+			remoteInfo = vcommerce;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E3A7C146BF9CB4434AB86E /* Pods-vcommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerceTests/Pods-vcommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		22AFDB472199CC55A805113A /* Pods-vcommerceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerceTests.release.xcconfig"; path = "Target Support Files/Pods-vcommerceTests/Pods-vcommerceTests.release.xcconfig"; sourceTree = "<group>"; };
+		65774015FB12F9ED6149CEB3 /* Pods_vcommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vcommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE8479ABBCAA712B6115EF0 /* Pods_vcommerce_vcommerceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vcommerce_vcommerceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5F3207F37A37284965313F /* Pods-vcommerce-vcommerceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce-vcommerceUITests.release.xcconfig"; path = "Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9CE0B70C740532DF4A2EF34 /* Pods-vcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce.release.xcconfig"; path = "Target Support Files/Pods-vcommerce/Pods-vcommerce.release.xcconfig"; sourceTree = "<group>"; };
+		C9F5EF4E0311A0111394A750 /* Pods-vcommerce-vcommerceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce-vcommerceUITests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E417000C101CF7AD12A464CE /* Pods_vcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECAA013B2522F49F00D15B93 /* vcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECAA013E2522F49F00D15B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECAA01402522F49F00D15B93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ECAA01422522F49F00D15B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECAA01442522F4A100D15B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECAA01472522F4A100D15B93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECAA014A2522F4A100D15B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECAA014C2522F4A100D15B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAA01512522F4A100D15B93 /* vcommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vcommerceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECAA01552522F4A100D15B93 /* vcommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcommerceTests.swift; sourceTree = "<group>"; };
+		ECAA01572522F4A100D15B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAA015C2522F4A100D15B93 /* vcommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vcommerceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcommerceUITests.swift; sourceTree = "<group>"; };
+		ECAA01622522F4A100D15B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECAA0175252612F600D15B93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F18A966CBBC3128952C4C249 /* Pods-vcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce.debug.xcconfig"; path = "Target Support Files/Pods-vcommerce/Pods-vcommerce.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECAA01382522F49F00D15B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7A6CBACED91265BDBC646C /* Pods_vcommerce.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECAA014E2522F4A100D15B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16361FA9EA3B722BBCF67CD /* Pods_vcommerceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECAA01592522F4A100D15B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA5D2D68D474F80A508EB38 /* Pods_vcommerce_vcommerceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D0DB1DDDB0029F9537B7E9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F18A966CBBC3128952C4C249 /* Pods-vcommerce.debug.xcconfig */,
+				B9CE0B70C740532DF4A2EF34 /* Pods-vcommerce.release.xcconfig */,
+				C9F5EF4E0311A0111394A750 /* Pods-vcommerce-vcommerceUITests.debug.xcconfig */,
+				AE5F3207F37A37284965313F /* Pods-vcommerce-vcommerceUITests.release.xcconfig */,
+				04E3A7C146BF9CB4434AB86E /* Pods-vcommerceTests.debug.xcconfig */,
+				22AFDB472199CC55A805113A /* Pods-vcommerceTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5A2EDC9E592FC3AA465114F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E417000C101CF7AD12A464CE /* Pods_vcommerce.framework */,
+				8FE8479ABBCAA712B6115EF0 /* Pods_vcommerce_vcommerceUITests.framework */,
+				65774015FB12F9ED6149CEB3 /* Pods_vcommerceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECAA01322522F49F00D15B93 = {
+			isa = PBXGroup;
+			children = (
+				ECAA013D2522F49F00D15B93 /* vcommerce */,
+				ECAA01542522F4A100D15B93 /* vcommerceTests */,
+				ECAA015F2522F4A100D15B93 /* vcommerceUITests */,
+				ECAA013C2522F49F00D15B93 /* Products */,
+				8D0DB1DDDB0029F9537B7E9C /* Pods */,
+				E5A2EDC9E592FC3AA465114F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECAA013C2522F49F00D15B93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA013B2522F49F00D15B93 /* vcommerce.app */,
+				ECAA01512522F4A100D15B93 /* vcommerceTests.xctest */,
+				ECAA015C2522F4A100D15B93 /* vcommerceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECAA013D2522F49F00D15B93 /* vcommerce */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA017C252614F400D15B93 /* New Group */,
+				ECAA017B252614EB00D15B93 /* Ui */,
+				ECAA0171252610BA00D15B93 /* Image */,
+				ECAA013E2522F49F00D15B93 /* AppDelegate.swift */,
+				ECAA01402522F49F00D15B93 /* SceneDelegate.swift */,
+				ECAA01422522F49F00D15B93 /* ContentView.swift */,
+				ECAA01442522F4A100D15B93 /* Assets.xcassets */,
+				ECAA01492522F4A100D15B93 /* LaunchScreen.storyboard */,
+				ECAA014C2522F4A100D15B93 /* Info.plist */,
+				ECAA01462522F4A100D15B93 /* Preview Content */,
+				ECAA0175252612F600D15B93 /* LoginView.swift */,
+			);
+			path = vcommerce;
+			sourceTree = "<group>";
+		};
+		ECAA01462522F4A100D15B93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA01472522F4A100D15B93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECAA01542522F4A100D15B93 /* vcommerceTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA01552522F4A100D15B93 /* vcommerceTests.swift */,
+				ECAA01572522F4A100D15B93 /* Info.plist */,
+			);
+			path = vcommerceTests;
+			sourceTree = "<group>";
+		};
+		ECAA015F2522F4A100D15B93 /* vcommerceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */,
+				ECAA01622522F4A100D15B93 /* Info.plist */,
+			);
+			path = vcommerceUITests;
+			sourceTree = "<group>";
+		};
+		ECAA0171252610BA00D15B93 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		ECAA017B252614EB00D15B93 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		ECAA017C252614F400D15B93 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECAA013A2522F49F00D15B93 /* vcommerce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECAA01652522F4A100D15B93 /* Build configuration list for PBXNativeTarget "vcommerce" */;
+			buildPhases = (
+				E84EFB8D59B97DB8388D7060 /* [CP] Check Pods Manifest.lock */,
+				ECAA01372522F49F00D15B93 /* Sources */,
+				ECAA01382522F49F00D15B93 /* Frameworks */,
+				ECAA01392522F49F00D15B93 /* Resources */,
+				E56A3F88B5214B2057CB61D5 /* [CP] Embed Pods Frameworks */,
+				351E9F761848014F8EC4E062 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vcommerce;
+			productName = vcommerce;
+			productReference = ECAA013B2522F49F00D15B93 /* vcommerce.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECAA01502522F4A100D15B93 /* vcommerceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECAA01682522F4A100D15B93 /* Build configuration list for PBXNativeTarget "vcommerceTests" */;
+			buildPhases = (
+				744C42F5A577CAA5910C0B85 /* [CP] Check Pods Manifest.lock */,
+				ECAA014D2522F4A100D15B93 /* Sources */,
+				ECAA014E2522F4A100D15B93 /* Frameworks */,
+				ECAA014F2522F4A100D15B93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECAA01532522F4A100D15B93 /* PBXTargetDependency */,
+			);
+			name = vcommerceTests;
+			productName = vcommerceTests;
+			productReference = ECAA01512522F4A100D15B93 /* vcommerceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECAA015B2522F4A100D15B93 /* vcommerceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECAA016B2522F4A100D15B93 /* Build configuration list for PBXNativeTarget "vcommerceUITests" */;
+			buildPhases = (
+				DF819619EF3E75495A0A4B23 /* [CP] Check Pods Manifest.lock */,
+				ECAA01582522F4A100D15B93 /* Sources */,
+				ECAA01592522F4A100D15B93 /* Frameworks */,
+				ECAA015A2522F4A100D15B93 /* Resources */,
+				E27FF59E9F1A6455E1B76D8F /* [CP] Embed Pods Frameworks */,
+				1296BDB3CC7CF61B6FF2DBB9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECAA015E2522F4A100D15B93 /* PBXTargetDependency */,
+			);
+			name = vcommerceUITests;
+			productName = vcommerceUITests;
+			productReference = ECAA015C2522F4A100D15B93 /* vcommerceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECAA01332522F49F00D15B93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					ECAA013A2522F49F00D15B93 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					ECAA01502522F4A100D15B93 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = ECAA013A2522F49F00D15B93;
+					};
+					ECAA015B2522F4A100D15B93 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = ECAA013A2522F49F00D15B93;
+					};
+				};
+			};
+			buildConfigurationList = ECAA01362522F49F00D15B93 /* Build configuration list for PBXProject "vcommerce" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECAA01322522F49F00D15B93;
+			productRefGroup = ECAA013C2522F49F00D15B93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECAA013A2522F49F00D15B93 /* vcommerce */,
+				ECAA01502522F4A100D15B93 /* vcommerceTests */,
+				ECAA015B2522F4A100D15B93 /* vcommerceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECAA01392522F49F00D15B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECAA014B2522F4A100D15B93 /* LaunchScreen.storyboard in Resources */,
+				ECAA01482522F4A100D15B93 /* Preview Assets.xcassets in Resources */,
+				ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECAA014F2522F4A100D15B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECAA015A2522F4A100D15B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1296BDB3CC7CF61B6FF2DBB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		351E9F761848014F8EC4E062 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce/Pods-vcommerce-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce/Pods-vcommerce-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vcommerce/Pods-vcommerce-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		744C42F5A577CAA5910C0B85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vcommerceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF819619EF3E75495A0A4B23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vcommerce-vcommerceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E27FF59E9F1A6455E1B76D8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56A3F88B5214B2057CB61D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce/Pods-vcommerce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vcommerce/Pods-vcommerce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vcommerce/Pods-vcommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E84EFB8D59B97DB8388D7060 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vcommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECAA01372522F49F00D15B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */,
+				ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */,
+				ECAA0176252612F600D15B93 /* LoginView.swift in Sources */,
+				ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECAA014D2522F4A100D15B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECAA01562522F4A100D15B93 /* vcommerceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECAA01582522F4A100D15B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECAA01612522F4A100D15B93 /* vcommerceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECAA01532522F4A100D15B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECAA013A2522F49F00D15B93 /* vcommerce */;
+			targetProxy = ECAA01522522F4A100D15B93 /* PBXContainerItemProxy */;
+		};
+		ECAA015E2522F4A100D15B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECAA013A2522F49F00D15B93 /* vcommerce */;
+			targetProxy = ECAA015D2522F4A100D15B93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECAA01492522F4A100D15B93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECAA014A2522F4A100D15B93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECAA01632522F4A100D15B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECAA01642522F4A100D15B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECAA01662522F4A100D15B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F18A966CBBC3128952C4C249 /* Pods-vcommerce.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"vcommerce/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = vcommerce/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uos.vcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECAA01672522F4A100D15B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9CE0B70C740532DF4A2EF34 /* Pods-vcommerce.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"vcommerce/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = vcommerce/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uos.vcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECAA01692522F4A100D15B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E3A7C146BF9CB4434AB86E /* Pods-vcommerceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vcommerceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uos.vcommerceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vcommerce.app/vcommerce";
+			};
+			name = Debug;
+		};
+		ECAA016A2522F4A100D15B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AFDB472199CC55A805113A /* Pods-vcommerceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vcommerceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uos.vcommerceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vcommerce.app/vcommerce";
+			};
+			name = Release;
+		};
+		ECAA016C2522F4A100D15B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F5EF4E0311A0111394A750 /* Pods-vcommerce-vcommerceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vcommerceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uos.vcommerceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vcommerce;
+			};
+			name = Debug;
+		};
+		ECAA016D2522F4A100D15B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5F3207F37A37284965313F /* Pods-vcommerce-vcommerceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = vcommerceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uos.vcommerceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vcommerce;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECAA01362522F49F00D15B93 /* Build configuration list for PBXProject "vcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECAA01632522F4A100D15B93 /* Debug */,
+				ECAA01642522F4A100D15B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECAA01652522F4A100D15B93 /* Build configuration list for PBXNativeTarget "vcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECAA01662522F4A100D15B93 /* Debug */,
+				ECAA01672522F4A100D15B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECAA01682522F4A100D15B93 /* Build configuration list for PBXNativeTarget "vcommerceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECAA01692522F4A100D15B93 /* Debug */,
+				ECAA016A2522F4A100D15B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECAA016B2522F4A100D15B93 /* Build configuration list for PBXNativeTarget "vcommerceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECAA016C2522F4A100D15B93 /* Debug */,
+				ECAA016D2522F4A100D15B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECAA01332522F49F00D15B93 /* Project object */;
+}

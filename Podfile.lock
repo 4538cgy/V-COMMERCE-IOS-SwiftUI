@@ -448,6 +448,7 @@ PODS:
   - nanopb/encode (1.30905.0)
   - PromisesObjC (1.2.10)
   - Protobuf (3.12.0)
+  - SwiftUIPager (1.9.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
@@ -465,6 +466,7 @@ DEPENDENCIES:
   - FirebaseFirestoreSwift
   - GoogleSignIn
   - MaterialComponents/TextFields
+  - SwiftUIPager
 
 SPEC REPOS:
   trunk:
@@ -503,6 +505,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Protobuf
+    - SwiftUIPager
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -540,7 +543,8 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
+  SwiftUIPager: 45a99d8e7b777e1b44ce9c4933a1c221345ce48a
 
-PODFILE CHECKSUM: 2f549ffce4b4bfab7b9f5d38ef2600aab4362d21
+PODFILE CHECKSUM: e189c19d4c7b91913f169db99c6fff13dc4d1d02
 
 COCOAPODS: 1.9.3

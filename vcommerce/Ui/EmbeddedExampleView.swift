@@ -1,0 +1,101 @@
+//
+//  EmbeddedExampleView.swift
+//  vcommerce
+//
+//  Created by JeongU Park on 2020/10/02.
+//
+
+import SwiftUI
+import SwiftUIPager
+
+struct EmbeddedExampleView: View {
+    @State var page: Int = 0
+    @State var page2: Int = 0
+    var data = Array(0..<10)
+
+
+    @State var alignment: ExamplePositionAlignment = .start
+
+    var body: some View {
+        NavigationView {
+            GeometryReader { proxy in
+                ScrollView {
+                    VStack {
+                        Pager(page: self.$page,
+                              data: self.data,
+                              id: \.self) { page in
+                                self.pageView(page)
+                        }
+                        .rotation3D()
+                        .itemSpacing(10)
+                        .itemAspectRatio(0.8, alignment: .end)
+                        .padding(8)
+                        .frame(width: min(proxy.size.height, proxy.size.width),
+                               height: min(proxy.size.height, proxy.size.width))
+                        .background(Color.gray.opacity(0.2))
+
+                        Text("Other alignments")
+                            .bold()
+                            .padding(.top, 40)
+
+                        Picker(selection: self.$alignment, label: Text("Position Alignment")) {
+                            ForEach(ExamplePositionAlignment.allCases, id: \.self) {
+                                Text($0.rawValue)
+                            }
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .padding(EdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12))
+
+                        Pager(page: self.$page2,
+                              data: self.data,
+                              id: \.self) { page in
+                                self.pageView(page)
+                        }
+                        .alignment(PositionAlignment(alignment: self.alignment))
+                        .itemSpacing(10)
+                        .itemAspectRatio(0.8, alignment: .end)
+                        .padding(8)
+                        .frame(width: proxy.size.width, height: 300)
+                        .background(Color.gray.opacity(0.2))
+                    }
+                }
+            }.navigationBarTitle("Inside a Scrollview", displayMode: .inline)
+        }.navigationViewStyle(StackNavigationViewStyle())
+    }
+
+    func pageView(_ page: Int) -> some View {
+        ZStack {
+            Rectangle()
+                .fill(Color.yellow)
+            Text("Page: \(page)")
+                .bold()
+        }
+        .cornerRadius(5)
+        .shadow(radius: 5)
+    }
+
+}
+
+enum ExamplePositionAlignment: String, CaseIterable {
+    case start
+    case justified
+    case end
+}
+
+extension PositionAlignment {
+    init(alignment: ExamplePositionAlignment) {
+        switch alignment {
+            case .start:
+                self = .start(10)
+            case .end:
+                self = .end(10)
+            case .justified:
+                self = .justified(10)
+        }
+    }
+}
+struct EmbeddedExampleView_Previews: PreviewProvider {
+    static var previews: some View {
+        EmbeddedExampleView()
+    }
+}

@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var isPresented : Bool = false
+    @State private var isPresentedLogin : Bool = false
+    @State private var isPresentedMain : Bool = false
     var body: some View {
         VStack{
             
             Button("로그인"){
-                self.isPresented.toggle()
-            }.fullScreenCover(isPresented: self.$isPresented, content: LoginView.init)
+                self.isPresentedLogin.toggle()
+            }.fullScreenCover(isPresented: self.$isPresentedLogin, content: LoginView.init)
+            
+            Button("메인화면"){
+                self.isPresentedMain.toggle()
+            }.fullScreenCover(isPresented: self.$isPresentedMain, content: MainView.init)
         }
         
     }

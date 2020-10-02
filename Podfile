@@ -29,6 +29,9 @@ pod 'FBSDKShareKit'
 pod 'FBSDKPlacesKit'
 #MeterialComponents
 pod 'MaterialComponents/TextFields'
+
+#ViewPager
+pod 'SwiftUIPager'
   target 'vcommerceTests' do
     inherit! :search_paths
     # Pods for testing

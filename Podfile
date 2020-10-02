@@ -27,6 +27,8 @@ pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKPlacesKit'
+#MeterialComponents
+pod 'MaterialComponents/TextFields'
   target 'vcommerceTests' do
     inherit! :search_paths
     # Pods for testing

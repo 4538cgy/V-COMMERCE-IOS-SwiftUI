@@ -385,6 +385,62 @@ PODS:
   - GTMSessionFetcher/Full (1.4.0):
     - GTMSessionFetcher/Core (= 1.4.0)
   - leveldb-library (1.22)
+  - MaterialComponents/AnimationTiming (117.0.0)
+  - MaterialComponents/Availability (117.0.0)
+  - MaterialComponents/Buttons (117.0.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (117.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (117.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (117.0.0)
+  - MaterialComponents/private/Application (117.0.0)
+  - MaterialComponents/private/Color (117.0.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (117.0.0)
+  - MaterialComponents/Ripple (117.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (117.0.0)
+  - MaterialComponents/ShadowLayer (117.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (117.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (117.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/TextFields (117.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (117.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
     - nanopb/encode (= 1.30905.0)
@@ -408,6 +464,7 @@ DEPENDENCIES:
   - Firebase/Messaging
   - FirebaseFirestoreSwift
   - GoogleSignIn
+  - MaterialComponents/TextFields
 
 SPEC REPOS:
   trunk:
@@ -440,6 +497,9 @@ SPEC REPOS:
     - GTMAppAuth
     - GTMSessionFetcher
     - leveldb-library
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
     - nanopb
     - PromisesObjC
     - Protobuf
@@ -474,10 +534,13 @@ SPEC CHECKSUMS:
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
+  MaterialComponents: 29320b6a89c4c90e41c7a41fc70e91127ac34161
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
 
-PODFILE CHECKSUM: e230a1b9fe7eeb96329937d3f13ae39604f9f655
+PODFILE CHECKSUM: 2f549ffce4b4bfab7b9f5d38ef2600aab4362d21
 
 COCOAPODS: 1.9.3

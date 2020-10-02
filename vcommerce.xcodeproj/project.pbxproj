@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E7A6CBACED91265BDBC646C /* Pods_vcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E417000C101CF7AD12A464CE /* Pods_vcommerce.framework */; };
 		7CA5D2D68D474F80A508EB38 /* Pods_vcommerce_vcommerceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE8479ABBCAA712B6115EF0 /* Pods_vcommerce_vcommerceUITests.framework */; };
 		C16361FA9EA3B722BBCF67CD /* Pods_vcommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65774015FB12F9ED6149CEB3 /* Pods_vcommerceTests.framework */; };
+		EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6C9925270B2F004E3B61 /* ImageStore.swift */; };
 		ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA013E2522F49F00D15B93 /* AppDelegate.swift */; };
 		ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01402522F49F00D15B93 /* SceneDelegate.swift */; };
 		ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01422522F49F00D15B93 /* ContentView.swift */; };
@@ -19,6 +20,9 @@
 		ECAA01562522F4A100D15B93 /* vcommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01552522F4A100D15B93 /* vcommerceTests.swift */; };
 		ECAA01612522F4A100D15B93 /* vcommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */; };
 		ECAA0176252612F600D15B93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA0175252612F600D15B93 /* LoginView.swift */; };
+		ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC6081A25262DC1006763EE /* CustomTextField.swift */; };
+		ECC6085C25270522006763EE /* btn_signin_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6085A25270522006763EE /* btn_signin_facebook.png */; };
+		ECC6085D25270522006763EE /* btn_signin_google.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6085B25270522006763EE /* btn_signin_google.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,7 @@
 		B9CE0B70C740532DF4A2EF34 /* Pods-vcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce.release.xcconfig"; path = "Target Support Files/Pods-vcommerce/Pods-vcommerce.release.xcconfig"; sourceTree = "<group>"; };
 		C9F5EF4E0311A0111394A750 /* Pods-vcommerce-vcommerceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce-vcommerceUITests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E417000C101CF7AD12A464CE /* Pods_vcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5B6C9925270B2F004E3B61 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		ECAA013B2522F49F00D15B93 /* vcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA013E2522F49F00D15B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAA01402522F49F00D15B93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +67,9 @@
 		ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcommerceUITests.swift; sourceTree = "<group>"; };
 		ECAA01622522F4A100D15B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECAA0175252612F600D15B93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ECC6081A25262DC1006763EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		ECC6085A25270522006763EE /* btn_signin_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_signin_facebook.png; sourceTree = "<group>"; };
+		ECC6085B25270522006763EE /* btn_signin_google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_signin_google.png; sourceTree = "<group>"; };
 		F18A966CBBC3128952C4C249 /* Pods-vcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce.debug.xcconfig"; path = "Target Support Files/Pods-vcommerce/Pods-vcommerce.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +111,6 @@
 				04E3A7C146BF9CB4434AB86E /* Pods-vcommerceTests.debug.xcconfig */,
 				22AFDB472199CC55A805113A /* Pods-vcommerceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +122,14 @@
 				65774015FB12F9ED6149CEB3 /* Pods_vcommerceTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5B6C9825270B18004E3B61 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B6C9925270B2F004E3B61 /* ImageStore.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		ECAA01322522F49F00D15B93 = {
@@ -142,17 +157,16 @@
 		ECAA013D2522F49F00D15B93 /* vcommerce */ = {
 			isa = PBXGroup;
 			children = (
-				ECAA017C252614F400D15B93 /* New Group */,
+				EC5B6C9825270B18004E3B61 /* Util */,
+				ECC6081925262D62006763EE /* ViewController */,
 				ECAA017B252614EB00D15B93 /* Ui */,
 				ECAA0171252610BA00D15B93 /* Image */,
 				ECAA013E2522F49F00D15B93 /* AppDelegate.swift */,
 				ECAA01402522F49F00D15B93 /* SceneDelegate.swift */,
-				ECAA01422522F49F00D15B93 /* ContentView.swift */,
 				ECAA01442522F4A100D15B93 /* Assets.xcassets */,
 				ECAA01492522F4A100D15B93 /* LaunchScreen.storyboard */,
 				ECAA014C2522F4A100D15B93 /* Info.plist */,
 				ECAA01462522F4A100D15B93 /* Preview Content */,
-				ECAA0175252612F600D15B93 /* LoginView.swift */,
 			);
 			path = vcommerce;
 			sourceTree = "<group>";
@@ -186,6 +200,8 @@
 		ECAA0171252610BA00D15B93 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				ECC6085A25270522006763EE /* btn_signin_facebook.png */,
+				ECC6085B25270522006763EE /* btn_signin_google.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -193,15 +209,18 @@
 		ECAA017B252614EB00D15B93 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				ECAA0175252612F600D15B93 /* LoginView.swift */,
+				ECAA01422522F49F00D15B93 /* ContentView.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
 		};
-		ECAA017C252614F400D15B93 /* New Group */ = {
+		ECC6081925262D62006763EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ECC6081A25262DC1006763EE /* CustomTextField.swift */,
 			);
-			path = "New Group";
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +335,8 @@
 			files = (
 				ECAA014B2522F4A100D15B93 /* LaunchScreen.storyboard in Resources */,
 				ECAA01482522F4A100D15B93 /* Preview Assets.xcassets in Resources */,
+				ECC6085C25270522006763EE /* btn_signin_facebook.png in Resources */,
+				ECC6085D25270522006763EE /* btn_signin_google.png in Resources */,
 				ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,8 +501,10 @@
 			files = (
 				ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */,
 				ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */,
+				ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */,
 				ECAA0176252612F600D15B93 /* LoginView.swift in Sources */,
 				ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */,
+				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,12 @@
 		EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6C9925270B2F004E3B61 /* ImageStore.swift */; };
 		EC5B6CDA252721FF004E3B61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6CD9252721FF004E3B61 /* MainView.swift */; };
 		EC5B6D0A25272B39004E3B61 /* EmbeddedExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6D0925272B39004E3B61 /* EmbeddedExampleView.swift */; };
+		EC6DD80D2540188C008479C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */; };
+		EC6DD81525401BA8008479C4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6DD81425401BA8008479C4 /* Login.storyboard */; };
+		EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */; };
+		EC6DD81F25401ECB008479C4 /* RoundedBoarderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD81E25401ECB008479C4 /* RoundedBoarderButton.swift */; };
+		EC6DD82525402011008479C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD82425402011008479C4 /* LoginViewController.swift */; };
+		EC6DD82D254033E9008479C4 /* LoginVCRepresentaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD82C254033E9008479C4 /* LoginVCRepresentaion.swift */; };
 		ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA013E2522F49F00D15B93 /* AppDelegate.swift */; };
 		ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01402522F49F00D15B93 /* SceneDelegate.swift */; };
 		ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01422522F49F00D15B93 /* ContentView.swift */; };
@@ -56,6 +62,12 @@
 		EC5B6C9925270B2F004E3B61 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		EC5B6CD9252721FF004E3B61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EC5B6D0925272B39004E3B61 /* EmbeddedExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedExampleView.swift; sourceTree = "<group>"; };
+		EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC6DD81425401BA8008479C4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBoarderView.swift; sourceTree = "<group>"; };
+		EC6DD81E25401ECB008479C4 /* RoundedBoarderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBoarderButton.swift; sourceTree = "<group>"; };
+		EC6DD82425402011008479C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC6DD82C254033E9008479C4 /* LoginVCRepresentaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCRepresentaion.swift; sourceTree = "<group>"; };
 		ECAA013B2522F49F00D15B93 /* vcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA013E2522F49F00D15B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAA01402522F49F00D15B93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,8 +144,19 @@
 			isa = PBXGroup;
 			children = (
 				EC5B6C9925270B2F004E3B61 /* ImageStore.swift */,
+				EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */,
+				EC6DD81E25401ECB008479C4 /* RoundedBoarderButton.swift */,
+				EC6DD82C254033E9008479C4 /* LoginVCRepresentaion.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		EC6DD82325401FE5008479C4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EC6DD81425401BA8008479C4 /* Login.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		ECAA01322522F49F00D15B93 = {
@@ -161,6 +184,7 @@
 		ECAA013D2522F49F00D15B93 /* vcommerce */ = {
 			isa = PBXGroup;
 			children = (
+				EC6DD82325401FE5008479C4 /* Storyboard */,
 				EC5B6C9825270B18004E3B61 /* Util */,
 				ECC6081925262D62006763EE /* ViewController */,
 				ECAA017B252614EB00D15B93 /* Ui */,
@@ -168,6 +192,7 @@
 				ECAA013E2522F49F00D15B93 /* AppDelegate.swift */,
 				ECAA01402522F49F00D15B93 /* SceneDelegate.swift */,
 				ECAA01442522F4A100D15B93 /* Assets.xcassets */,
+				EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */,
 				ECAA01492522F4A100D15B93 /* LaunchScreen.storyboard */,
 				ECAA014C2522F4A100D15B93 /* Info.plist */,
 				ECAA01462522F4A100D15B93 /* Preview Content */,
@@ -225,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				ECC6081A25262DC1006763EE /* CustomTextField.swift */,
+				EC6DD82425402011008479C4 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -343,7 +369,9 @@
 				ECAA01482522F4A100D15B93 /* Preview Assets.xcassets in Resources */,
 				ECC6085C25270522006763EE /* btn_signin_facebook.png in Resources */,
 				ECC6085D25270522006763EE /* btn_signin_google.png in Resources */,
+				EC6DD81525401BA8008479C4 /* Login.storyboard in Resources */,
 				ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */,
+				EC6DD80D2540188C008479C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,13 +533,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6DD82525402011008479C4 /* LoginViewController.swift in Sources */,
 				ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */,
 				EC5B6CDA252721FF004E3B61 /* MainView.swift in Sources */,
 				ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */,
 				ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */,
+				EC6DD82D254033E9008479C4 /* LoginVCRepresentaion.swift in Sources */,
 				ECAA0176252612F600D15B93 /* LoginView.swift in Sources */,
 				EC5B6D0A25272B39004E3B61 /* EmbeddedExampleView.swift in Sources */,
 				ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */,
+				EC6DD81F25401ECB008479C4 /* RoundedBoarderButton.swift in Sources */,
+				EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */,
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

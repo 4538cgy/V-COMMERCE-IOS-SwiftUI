@@ -15,7 +15,8 @@ struct ContentView: View {
             
             Button("로그인"){
                 self.isPresentedLogin.toggle()
-            }.fullScreenCover(isPresented: self.$isPresentedLogin, content: LoginView.init)
+            }.fullScreenCover(isPresented: self.$isPresentedLogin, content:
+                                LoginVCRepresentation.init)
             
             Button("메인화면"){
                 self.isPresentedMain.toggle()

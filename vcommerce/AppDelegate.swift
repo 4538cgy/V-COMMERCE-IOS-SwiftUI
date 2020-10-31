@@ -10,7 +10,7 @@ import Firebase
 import GoogleSignIn
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUserNotificationCenterDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
@@ -29,18 +29,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                        accessToken: authentication.accessToken)
-        let userId = user.userID                  // For client-side use only!
-            let idToken = user.authentication.idToken // Safe to send to the server
+        firebaseAuthforSignIn(credential: credential,user: user)
+    }
+    
+    private func firebaseAuthforSignIn(credential : AuthCredential, user :GIDGoogleUser){
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+            if let error = error {
+                let authError = error as NSError
+                if authError.code == AuthErrorCode.secondFactorRequired.rawValue {
+                    print("The user is a multi-factor user. Second factor challenge is required.")
+                } else {
+                    print("authentication error \(error.localizedDescription)")
+                }
+                
+                // ...
+                return
+            }
+            // User is signed in
+            // ...
+            let userId = user.userID
+            let idToken = user.authentication.idToken 
             let fullName = user.profile.name
             let givenName = user.profile.givenName
             let familyName = user.profile.familyName
             let email = user.profile.email
             // [START_EXCLUDE]
             NotificationCenter.default.post(
-              name: Notification.Name(rawValue: "ToggleAuthUINotification"),
-              object: nil,
-              userInfo: ["statusText": "Signed in user:\n\(fullName!)"])
+                name: Notification.Name(rawValue: "ToggleAuthUINotification"),
+                object: nil,
+                userInfo: ["statusText": "Signed in user:\n\(fullName!)"])
             // [END_EXCLUDE]
+        }
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -49,6 +68,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+        Messaging.messaging().delegate = self
+        
+        if #available(iOS 10.0, *) {
+              // For iOS 10 display notification (sent via APNS)
+              UNUserNotificationCenter.current().delegate = self
+
+              let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+              UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
+            } else {
+              let settings: UIUserNotificationSettings =
+              UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+              application.registerUserNotificationSettings(settings)
+            }
+
+            application.registerForRemoteNotifications()
         return true
     }
     
@@ -74,4 +111,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     
 }
+
+extension AppDelegate : MessagingDelegate {
+    
+    func messaging(_ messaging: Messaging, didRefreshRegistrationToken fcmToken: String) {
+        NSLog("[RemoteNotification] didRefreshRegistrationToken: \(fcmToken)")
+    }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("Firebase registration token: \(fcmToken)")
+        
+        // TODO: If necessary send token to application server.
+        // Note: This callback is fired at each app startup and whenever a new token is generated.
+    }
+
+    
+    // iOS9, called when presenting notification in foreground
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        NSLog("[RemoteNotification] applicationState: \(application.applicationState) didReceiveRemoteNotification for iOS9: \(userInfo)")
+        
+//        // Let FCM know about the message for analytics etc.
+//        Messaging.messaging().appDidReceiveMessage(userInfo)
+
+//        handleNotification(application, userInfo: userInfo)
+    }
+}
+
+
+
+
+
+
+
 

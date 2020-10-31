@@ -6,7 +6,8 @@ target 'vcommerce' do
   use_frameworks!
 
   # Pods for vcommerce
-pod 'Alamofire', '~> 5.2'
+pod 'Alamofire'
+pod 'AlamofireObjectMapper'
 #애널리스틱
 pod 'Firebase/Analytics'
 #클라우드 메시징
@@ -22,8 +23,8 @@ pod 'Firebase/Crashlytics'
 #인증및 구글 로그인
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
-#facebook 
-pod 'FBSDKCoreKit'  
+#facebook
+pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKPlacesKit'

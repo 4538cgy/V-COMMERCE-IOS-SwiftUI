@@ -29,7 +29,7 @@ struct MainView: View {
                     .onTapGesture(perform: {
                         self.topToggle.toggle()
                     }).animation(.spring())
-                bottomView().offset(x: 0, y: bottomscale * 200 ).onTapGesture(perform: {
+                bottomView().offset(x: 0, y: bottomscale * 160 ).onTapGesture(perform: {
                     bottomscale -= 1
                     if bottomscale == 0 {
                         bottomscale = 3

@@ -79,31 +79,31 @@ class APIClient : NSObject {
                 return;
             }
             
-            if let data = Mapper<T>().map(JSONObject: jsonObject) {
-                #if DEBUG
-                print("onProcess: \(data)\n\(data.toJSONString(prettyPrint: true) ?? "")\n")
-                #endif
-                
-                if (true == data.isSuccess()) {
-                    if let success = success {
-                        success(data);
-                    }
-                }
-                else {
-                    
-                    if let failure = failure {
-                        failure(data.code, data)
-                    }
-                    
-                }
-            }
-            else {
-                processFailure(statusCode: statusCode)
-                
-                if let failure = failure {
-                    failure(0, nil);
-                }
-            }
+//            if let data = Mapper<T>().map(JSONObject: jsonObject) {
+//                #if DEBUG
+//                print("onProcess: \(data)\n\(data.toJSONString(prettyPrint: true) ?? "")\n")
+//                #endif
+//                
+//                if (true == data.isSuccess()) {
+//                    if let success = success {
+//                        success(data);
+//                    }
+//                }
+//                else {
+//                    
+//                    if let failure = failure {
+//                        failure(data.code, data)
+//                    }
+//                    
+//                }
+//            }
+//            else {
+//                processFailure(statusCode: statusCode)
+//                
+//                if let failure = failure {
+//                    failure(0, nil);
+//                }
+//            }
             
         }, failure: { (statusCode: Int) in
             
@@ -125,29 +125,31 @@ class APIClient : NSObject {
         
         var url:String = request.methodURL()
         url = ((url.hasPrefix("http")) ? url : APIClient.URL_BASE + url)
-        
-        let parameters = request.toJSON() as Parameters
+        guard let dict = try? JSONSerialization.jsonObject(with: request.getJSONEncoderData(), options: []) as? [String: Any] else {
+            return failure(0)
+        }
+        let parameters = dict
         send(url: url, headers: request.headers(), parameters: parameters,mediaData : mediaData,  methodString: request.methodType().rawValue, contentType: request.contentType(),  timeoutInterval: request.timeoutInterval(), success: {
             (response, responseObject) in
-            
+
             stopProgress()
-            
+
             guard let responseData = responseObject as? Data else {
                 processFailure(statusCode: response.statusCode)
-                
+
                 if let failure = failure {
                     failure(0);
                 }
                 return;
             }
-            
+
             if let success = success {
                 success(response.statusCode, responseData)
             }
         }, failure: { (response, error) in
-            
+
             stopProgress()
-            
+
             if response == nil{
                 processFailure(statusCode: 0)
                 if let failure = failure {
@@ -155,26 +157,26 @@ class APIClient : NSObject {
                 }
                 return
             }
-            
+
             let error = error as NSError
             if (error.code == NSURLErrorNotConnectedToInternet) {
                 processFailure(statusCode: 0)
-                
+
                 if let failure = failure {
                     failure(0)
                 }
                 return
             }
-            
+
             print("onErrorReceive: \(url) statusCode : \(String(describing: response!.statusCode)), errorCode : \(error.code)\n\n")
-            
+
             let statusCode = response?.statusCode ?? error.code
             processFailure(statusCode: statusCode)
-            
+
             if let failure = failure {
                 failure(statusCode)
             }
-            
+
         })
     }
     

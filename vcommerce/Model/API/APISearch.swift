@@ -7,6 +7,7 @@
 
 import Foundation
 import ObjectMapper
+import Alamofire
 
 class APISearch {
     class Request : APIBase.Request {
@@ -16,50 +17,36 @@ class APISearch {
         override func methods() -> [Any] {
             return [MethodType.GET, "/api/v1/search"]
         }
-        
-        required init?(map: Map) { super.init(map: map) }
-        
-        var uid:String! = ""
-        
+        override func getJSONEncoderData() -> Data?{
+            return try! JSONEncoder().encode(RequestParam(uid: self.uid))
+        }
+        struct RequestParam : Codable{
+            let uid :String
+        }
+        var uid : String!
         init(uid: String!) {
             super.init()
             self.uid = uid
         }
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            
-            uid <- map["uid"]
-            
-        }
+        
     }
+    
     
     class Response: APIBase.Response {
         
-        
+        struct SearchRP : Codable {
+            let uid : String
+            let items : [Items]!
+        }
         var uid : String!
         var items: [Items]!
         
         
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            uid <- map["uid"]
-            items <- map["items"]
-        }
-        
-        class Items : Mappable{
+        class Items : Codable{
             var pid : String!
             var status : Int!
             var thumbnail : String!
             var media : String!
-            
-            required init?(map: Map) {}
-            
-            func mapping(map: Map) {
-                pid <- map["pid"]
-                status <- map["status"]
-                thumbnail <- map["thumbnail"]
-                media <- map["media"]
-            }
         }
     }
 }

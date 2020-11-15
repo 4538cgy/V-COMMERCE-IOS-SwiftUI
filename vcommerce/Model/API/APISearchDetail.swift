@@ -16,21 +16,19 @@ class APISearchDetail{
         override func methods() -> [Any] {
             return [MethodType.GET, "/api/v1/search/detail"]
         }
-        
-        required init?(map: Map) { super.init(map: map) }
-        
+        override func getJSONEncoderData() -> Data?{
+            return try! JSONEncoder().encode(RequestParam(pid: self.pid))
+        }
+        struct RequestParam : Codable{
+            let pid : String
+        }
         var pid:String! = ""
         
         init(pid: String!) {
             super.init()
             self.pid = pid
         }
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            
-            pid <- map["pid"]
-            
-        }
+        
     }
     
     class Response: APIBase.Response {
@@ -45,38 +43,13 @@ class APISearchDetail{
         var eval : Eval!
         
         
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            pid <- map["pid"]
-            userInfo <- map["items"]
-            title <- map["title"]
-            body <- map["body"]
-            thumbnail <- map["thumbnail"]
-            media <- map["media"]
-            eval <- map["eval"]
-        }
-        
-        class UserInfo : Mappable{
+        class UserInfo : Codable{
             var uid : String!
             var name : String!
-            
-            required init?(map: Map) {}
-            
-            func mapping(map: Map) {
-                uid <- map["uid"]
-                name <- map["name"]
-            }
         }
-        class Eval : Mappable {
+        class Eval : Codable {
             var like : Int!
             var dislike : Int!
-            
-            required init?(map: Map) {}
-            
-            func mapping(map: Map) {
-                like <- map["like"]
-                dislike <- map["dislike"]
-            }
         }
     }
 }

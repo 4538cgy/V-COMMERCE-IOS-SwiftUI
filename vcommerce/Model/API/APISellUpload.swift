@@ -18,8 +18,6 @@ class APISellUpload{
             return [MethodType.POST, "/api/v1/sell/upload"]
         }
         
-        required init?(map: Map) { super.init(map: map) }
-        
         var meta: Meta!
         var media : Data!
         init(meta: Meta!,media : Data) {
@@ -27,13 +25,9 @@ class APISellUpload{
             self.meta = meta
             self.media = media
         }
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            meta.token <- map["token"]
-            meta.uid <- map["uid"]
-            meta.title <- map["title"]
-            meta.body <- map["body"]
-            meta.category <- map["category"]
+        
+        required init(from decoder: Decoder) throws {
+            fatalError("init(from:) has not been implemented")
         }
         
         override func contentType() -> String {

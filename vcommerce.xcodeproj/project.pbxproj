@@ -26,6 +26,7 @@
 		EC6DD841254053E8008479C4 /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD840254053E8008479C4 /* APIBase.swift */; };
 		EC6DD87625405655008479C4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD87525405655008479C4 /* APIClient.swift */; };
 		EC6DD87B254056A4008479C4 /* APISearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD87A254056A4008479C4 /* APISearch.swift */; };
+		ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */; };
 		ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA013E2522F49F00D15B93 /* AppDelegate.swift */; };
 		ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01402522F49F00D15B93 /* SceneDelegate.swift */; };
 		ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01422522F49F00D15B93 /* ContentView.swift */; };
@@ -81,6 +82,7 @@
 		EC6DD87525405655008479C4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EC6DD87A254056A4008479C4 /* APISearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearch.swift; sourceTree = "<group>"; };
 		EC83BB15890EF507EC7E25F8 /* Pods-vcommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerceTests/Pods-vcommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewFuncs.swift; sourceTree = "<group>"; };
 		ECAA013B2522F49F00D15B93 /* vcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA013E2522F49F00D15B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAA01402522F49F00D15B93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				EC6DD82C254033E9008479C4 /* LoginVCRepresentaion.swift */,
 				EC33C7832542817F004CBB9A /* Dictionary.swift */,
 				EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */,
+				ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				EC6DD81F25401ECB008479C4 /* RoundedBoarderButton.swift in Sources */,
 				EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */,
 				EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */,
+				ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */,
 				EC6DD841254053E8008479C4 /* APIBase.swift in Sources */,
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,
 			);

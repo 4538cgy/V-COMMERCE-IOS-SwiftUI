@@ -34,34 +34,6 @@ public class APIBase {
             return nil
         }
     }
-    
-    class Response: NSObject {
-        struct ResponsParam : Codable {
-            let code : Int
-            let msg : String
-        }
-        var code:Int = 0
-        var msg:String! = ""
-    
-        
-        func getErrorMessage() -> String! {
-            
-            if (nil == msg) {
-                return nil
-            }
-            
-            return msg
-        }
-        
-        
-        func isSuccess() -> Bool {
-            
-            if self.code != 0 { return false}
-            
-            return true
-        }
-        
-       
-    }
+
 }
 

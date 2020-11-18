@@ -36,6 +36,7 @@
 		ECAA01562522F4A100D15B93 /* vcommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01552522F4A100D15B93 /* vcommerceTests.swift */; };
 		ECAA01612522F4A100D15B93 /* vcommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */; };
 		ECAA0176252612F600D15B93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA0175252612F600D15B93 /* LoginView.swift */; };
+		ECAFD4892564F8450009E598 /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAFD4882564F8450009E598 /* ResponseCodable.swift */; };
 		ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC6081A25262DC1006763EE /* CustomTextField.swift */; };
 		ECC6085C25270522006763EE /* btn_signin_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6085A25270522006763EE /* btn_signin_facebook.png */; };
 		ECC6085D25270522006763EE /* btn_signin_google.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6085B25270522006763EE /* btn_signin_google.png */; };
@@ -98,6 +99,7 @@
 		ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcommerceUITests.swift; sourceTree = "<group>"; };
 		ECAA01622522F4A100D15B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECAA0175252612F600D15B93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ECAFD4882564F8450009E598 /* ResponseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
 		ECC6081A25262DC1006763EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		ECC6085A25270522006763EE /* btn_signin_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_signin_facebook.png; sourceTree = "<group>"; };
 		ECC6085B25270522006763EE /* btn_signin_google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_signin_google.png; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				EC6DD83F254053BD008479C4 /* API */,
 				EC6DD87525405655008479C4 /* APIClient.swift */,
+				ECAFD4882564F8450009E598 /* ResponseCodable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */,
 				EC6DD841254053E8008479C4 /* APIBase.swift in Sources */,
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,
+				ECAFD4892564F8450009E598 /* ResponseCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

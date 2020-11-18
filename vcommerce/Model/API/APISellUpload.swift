@@ -12,7 +12,7 @@ class APISellUpload{
     
     class Request : APIBase.Request {
         public func send(success: ((Response) -> Void)!, failure: ((Int, Response?)->Void)! = nil) {
-            APIClient.send(request: self,mediaData: self.media, response: Response.self, success: success, failure: failure);
+//            APIClient.send(request: self,mediaData: self.media, response: Response.self, success: success, failure: failure);
         }
         override func methods() -> [Any] {
             return [MethodType.POST, "/api/v1/sell/upload"]
@@ -50,8 +50,9 @@ class APISellUpload{
             }
         }
     }
-    class Response : APIBase.Response {
-        
+    struct Response : Codable{
+        var code : Int!
+        var msg : String!
     }
     
     

@@ -27,13 +27,15 @@ struct ContentView: View {
                 self.isPresentedMain.toggle()
             }.fullScreenCover(isPresented: self.$isPresentedMain, content: MainView.init)
             Button("requestList"){
-                APISearch.Request(uid: "22bbccdd").send { (respose) in
+                APISearch.Request(uid: "22bbccdd").send { (respose : SearchResponse) in
                     print(respose)
+
                 }
             }
             Button("requestDetail"){
-                APISearchDetail.Request(pid: "22bbccdd").send { (response) in
+                APISearchDetail.Request(pid: "22bbccdd").send { (response : SearchDetailResponse) in
                     print(response)
+                    
                 }
             }
             Button("upload"){

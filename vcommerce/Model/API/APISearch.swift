@@ -7,59 +7,28 @@
 
 import Foundation
 import ObjectMapper
+import Alamofire
 
 class APISearch {
     class Request : APIBase.Request {
-        public func send(success: ((Response) -> Void)!, failure: ((Int, Response?)->Void)! = nil) {
-            APIClient.send(request: self, response: Response.self, success: success, failure: failure);
+        public func send(success: ((SearchResponse) -> Void)!, failure: ((Int, SearchResponse?)->Void)! = nil) {
+            APIClient.send(request: self, response: SearchResponse.self, success: success, failure: failure);
         }
         override func methods() -> [Any] {
             return [MethodType.GET, "/api/v1/search"]
         }
-        
-        required init?(map: Map) { super.init(map: map) }
-        
-        var uid:String! = ""
-        
+        override func getJSONEncoderData() -> Data?{
+            return try! JSONEncoder().encode(RequestParam(uid: self.uid))
+        }
+        struct RequestParam : Codable{
+            let uid :String
+        }
+        var uid : String!
         init(uid: String!) {
             super.init()
             self.uid = uid
         }
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            
-            uid <- map["uid"]
-            
-        }
+        
     }
-    
-    class Response: APIBase.Response {
-        
-        
-        var uid : String!
-        var items: [Items]!
-        
-        
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            uid <- map["uid"]
-            items <- map["items"]
-        }
-        
-        class Items : Mappable{
-            var pid : String!
-            var status : Int!
-            var thumbnail : String!
-            var media : String!
-            
-            required init?(map: Map) {}
-            
-            func mapping(map: Map) {
-                pid <- map["pid"]
-                status <- map["status"]
-                thumbnail <- map["thumbnail"]
-                media <- map["media"]
-            }
-        }
-    }
+  
 }

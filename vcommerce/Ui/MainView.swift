@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftUIPager
+import AVKit
 
 struct MainView: View {
     @State var page: Int = 0
@@ -44,8 +45,7 @@ struct MainView: View {
         ZStack {
             Rectangle()
                 .fill(Color.yellow)
-            Text("Page: \(page)")
-                .bold()
+            VideoPlayer(player: AVPlayer(url:  URL(string:getURL(page) )!))
         }
         .cornerRadius(5)
         .shadow(radius: 5)

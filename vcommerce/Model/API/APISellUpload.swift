@@ -12,13 +12,11 @@ class APISellUpload{
     
     class Request : APIBase.Request {
         public func send(success: ((Response) -> Void)!, failure: ((Int, Response?)->Void)! = nil) {
-            APIClient.send(request: self,mediaData: self.media, response: Response.self, success: success, failure: failure);
+//            APIClient.send(request: self,mediaData: self.media, response: Response.self, success: success, failure: failure);
         }
         override func methods() -> [Any] {
             return [MethodType.POST, "/api/v1/sell/upload"]
         }
-        
-        required init?(map: Map) { super.init(map: map) }
         
         var meta: Meta!
         var media : Data!
@@ -27,13 +25,9 @@ class APISellUpload{
             self.meta = meta
             self.media = media
         }
-        override func mapping(map: Map) {
-            super.mapping(map: map)
-            meta.token <- map["token"]
-            meta.uid <- map["uid"]
-            meta.title <- map["title"]
-            meta.body <- map["body"]
-            meta.category <- map["category"]
+        
+        required init(from decoder: Decoder) throws {
+            fatalError("init(from:) has not been implemented")
         }
         
         override func contentType() -> String {
@@ -56,8 +50,9 @@ class APISellUpload{
             }
         }
     }
-    class Response : APIBase.Response {
-        
+    struct Response : Codable{
+        var code : Int!
+        var msg : String!
     }
     
     

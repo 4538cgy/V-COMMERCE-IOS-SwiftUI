@@ -16,7 +16,6 @@
 		EC33C7F8254470E7004CBB9A /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */; };
 		EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6C9925270B2F004E3B61 /* ImageStore.swift */; };
 		EC5B6CDA252721FF004E3B61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6CD9252721FF004E3B61 /* MainView.swift */; };
-		EC5B6D0A25272B39004E3B61 /* EmbeddedExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6D0925272B39004E3B61 /* EmbeddedExampleView.swift */; };
 		EC6DD80D2540188C008479C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */; };
 		EC6DD81525401BA8008479C4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6DD81425401BA8008479C4 /* Login.storyboard */; };
 		EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */; };
@@ -26,6 +25,8 @@
 		EC6DD841254053E8008479C4 /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD840254053E8008479C4 /* APIBase.swift */; };
 		EC6DD87625405655008479C4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD87525405655008479C4 /* APIClient.swift */; };
 		EC6DD87B254056A4008479C4 /* APISearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD87A254056A4008479C4 /* APISearch.swift */; };
+		EC9D2ACE2579195B00CF4D80 /* PagesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */; };
+		EC9D2AD6257A246C00CF4D80 /* ViewScaleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */; };
 		ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */; };
 		ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA013E2522F49F00D15B93 /* AppDelegate.swift */; };
 		ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01402522F49F00D15B93 /* SceneDelegate.swift */; };
@@ -72,7 +73,6 @@
 		EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		EC5B6C9925270B2F004E3B61 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		EC5B6CD9252721FF004E3B61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		EC5B6D0925272B39004E3B61 /* EmbeddedExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedExampleView.swift; sourceTree = "<group>"; };
 		EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC6DD81425401BA8008479C4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBoarderView.swift; sourceTree = "<group>"; };
@@ -83,6 +83,8 @@
 		EC6DD87525405655008479C4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EC6DD87A254056A4008479C4 /* APISearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearch.swift; sourceTree = "<group>"; };
 		EC83BB15890EF507EC7E25F8 /* Pods-vcommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerceTests/Pods-vcommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesContainer.swift; sourceTree = "<group>"; };
+		EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScaleObject.swift; sourceTree = "<group>"; };
 		ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewFuncs.swift; sourceTree = "<group>"; };
 		ECAA013B2522F49F00D15B93 /* vcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA013E2522F49F00D15B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				EC33C7832542817F004CBB9A /* Dictionary.swift */,
 				EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */,
 				ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */,
+				EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -199,6 +202,15 @@
 				EC33C7F225446AEE004CBB9A /* APISellUpload.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		EC9D2AC92579193700CF4D80 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC5B6CD9252721FF004E3B61 /* MainView.swift */,
+				EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		ECAA01322522F49F00D15B93 = {
@@ -281,10 +293,9 @@
 		ECAA017B252614EB00D15B93 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				EC9D2AC92579193700CF4D80 /* Main */,
 				ECAA0175252612F600D15B93 /* LoginView.swift */,
 				ECAA01422522F49F00D15B93 /* ContentView.swift */,
-				EC5B6CD9252721FF004E3B61 /* MainView.swift */,
-				EC5B6D0925272B39004E3B61 /* EmbeddedExampleView.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -603,9 +614,10 @@
 				EC6DD82D254033E9008479C4 /* LoginVCRepresentaion.swift in Sources */,
 				EC6DD87B254056A4008479C4 /* APISearch.swift in Sources */,
 				ECAA0176252612F600D15B93 /* LoginView.swift in Sources */,
+				EC9D2AD6257A246C00CF4D80 /* ViewScaleObject.swift in Sources */,
 				EC33C7F325446AEE004CBB9A /* APISellUpload.swift in Sources */,
 				EC33C7F8254470E7004CBB9A /* ImagePickerView.swift in Sources */,
-				EC5B6D0A25272B39004E3B61 /* EmbeddedExampleView.swift in Sources */,
+				EC9D2ACE2579195B00CF4D80 /* PagesContainer.swift in Sources */,
 				EC33C7EE2544575D004CBB9A /* APISearchDetail.swift in Sources */,
 				ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */,
 				EC6DD81F25401ECB008479C4 /* RoundedBoarderButton.swift in Sources */,

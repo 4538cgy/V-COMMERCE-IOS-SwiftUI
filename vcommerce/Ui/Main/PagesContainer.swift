@@ -43,17 +43,16 @@ struct PagesContainer <Content : View> : View {
                     }.onEnded { value in
                         if(self.startYGeture == true){
                             startYGeture = false
-                            print("gap : \(value.translation.height - self.startYPoint)")
-                            if (value.translation.height - self.startYPoint) < -100 {
+                            if (value.translation.height - self.startYPoint) < -100 { // 하단에서 상단으로 슬라이드
                                 if(viewScale.bottomscale == 4){
                                     viewScale.topScale = false
                                 }
                                 viewScale.bottomscale -= 1
-                                if viewScale.bottomscale < 1 {
-                                    viewScale.bottomscale = 1
+                                if viewScale.bottomscale < 2 {
+                                    viewScale.bottomscale = 2
                                 }
                                 
-                            }else if (value.translation.height - self.startYPoint) > 100 {
+                            }else if (value.translation.height - self.startYPoint) > 100 { // 상단에서 하단으로 슬라이드
                                 if(viewScale.bottomscale == 3){
                                     viewScale.topScale = true
                                 }
@@ -72,7 +71,11 @@ struct PagesContainer <Content : View> : View {
                         }
                         let offset = (value.translation.width + weakGesture) / geometry.size.width
                         let newIndex = (CGFloat(self.index) - offset).rounded()
-                        self.index = min(max(Int(newIndex), 0), self.contentCount - 1)
+                        if (newIndex == 4){
+                            self.index = 0
+                        }else{
+                            self.index = min(max(Int(newIndex), 0), self.contentCount - 1)
+                        }
                         
                     }
                 )

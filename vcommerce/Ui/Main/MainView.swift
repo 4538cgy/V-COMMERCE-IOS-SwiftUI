@@ -64,17 +64,16 @@ struct MainView: View {
     func checkEndDrageGesture(height : CGFloat){
         if(self.startYGeture == true){
             startYGeture = false
-            print("gap : \(height - self.startYPoint)")
-            if (height - self.startYPoint) < -100 {
+            if (height - self.startYPoint) < -100 { // 하단에서 상단으로 슬라이드
                 if(viewScale.bottomscale == 4){
                     viewScale.topScale = false
                 }
                 viewScale.bottomscale -= 1
-                if viewScale.bottomscale < 1 {
-                    viewScale.bottomscale = 1
+                if viewScale.bottomscale < 2 {
+                    viewScale.bottomscale = 2
                 }
                 
-            }else if (height - self.startYPoint) > 100 {
+            }else if (height - self.startYPoint) > 100 { // 상단에서 하단으로 슬라이드
                 if(viewScale.bottomscale == 3){
                     viewScale.topScale = true
                 }

@@ -36,7 +36,6 @@
 		ECAA014B2522F4A100D15B93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECAA01492522F4A100D15B93 /* LaunchScreen.storyboard */; };
 		ECAA01562522F4A100D15B93 /* vcommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01552522F4A100D15B93 /* vcommerceTests.swift */; };
 		ECAA01612522F4A100D15B93 /* vcommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */; };
-		ECAA0176252612F600D15B93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA0175252612F600D15B93 /* LoginView.swift */; };
 		ECAFD4892564F8450009E598 /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAFD4882564F8450009E598 /* ResponseCodable.swift */; };
 		ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC6081A25262DC1006763EE /* CustomTextField.swift */; };
 		ECC6085C25270522006763EE /* btn_signin_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6085A25270522006763EE /* btn_signin_facebook.png */; };
@@ -100,7 +99,6 @@
 		ECAA015C2522F4A100D15B93 /* vcommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vcommerceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA01602522F4A100D15B93 /* vcommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vcommerceUITests.swift; sourceTree = "<group>"; };
 		ECAA01622522F4A100D15B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECAA0175252612F600D15B93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ECAFD4882564F8450009E598 /* ResponseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
 		ECC6081A25262DC1006763EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		ECC6085A25270522006763EE /* btn_signin_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_signin_facebook.png; sourceTree = "<group>"; };
@@ -166,13 +164,21 @@
 				EC5B6C9925270B2F004E3B61 /* ImageStore.swift */,
 				EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */,
 				EC6DD81E25401ECB008479C4 /* RoundedBoarderButton.swift */,
-				EC6DD82C254033E9008479C4 /* LoginVCRepresentaion.swift */,
 				EC33C7832542817F004CBB9A /* Dictionary.swift */,
 				EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */,
 				ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */,
 				EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		EC680CB92580E24C0055615D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EC6DD82425402011008479C4 /* LoginViewController.swift */,
+				EC6DD82C254033E9008479C4 /* LoginVCRepresentaion.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		EC6DD82325401FE5008479C4 /* Storyboard */ = {
@@ -293,8 +299,8 @@
 		ECAA017B252614EB00D15B93 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				EC680CB92580E24C0055615D /* Login */,
 				EC9D2AC92579193700CF4D80 /* Main */,
-				ECAA0175252612F600D15B93 /* LoginView.swift */,
 				ECAA01422522F49F00D15B93 /* ContentView.swift */,
 			);
 			path = Ui;
@@ -304,7 +310,6 @@
 			isa = PBXGroup;
 			children = (
 				ECC6081A25262DC1006763EE /* CustomTextField.swift */,
-				EC6DD82425402011008479C4 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -613,7 +618,6 @@
 				ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */,
 				EC6DD82D254033E9008479C4 /* LoginVCRepresentaion.swift in Sources */,
 				EC6DD87B254056A4008479C4 /* APISearch.swift in Sources */,
-				ECAA0176252612F600D15B93 /* LoginView.swift in Sources */,
 				EC9D2AD6257A246C00CF4D80 /* ViewScaleObject.swift in Sources */,
 				EC33C7F325446AEE004CBB9A /* APISellUpload.swift in Sources */,
 				EC33C7F8254470E7004CBB9A /* ImagePickerView.swift in Sources */,

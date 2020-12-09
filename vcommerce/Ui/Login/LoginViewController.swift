@@ -14,6 +14,7 @@ import FirebaseAuth
 class LoginViewController : UIViewController {
    
     
+    @IBOutlet weak var googleLoginBtn: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +27,14 @@ class LoginViewController : UIViewController {
         
     }
     @objc func didRecieveTestNotification(_ notification: Notification) {
-             print("Test Notification")
+        print("Test Notification")
+        
      }
     @IBAction func googleLoginClick(_ sender: Any) {
         GIDSignIn.sharedInstance()?.signIn()
     }
     
+    @IBAction func logout(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.signOut()
+    }
 }

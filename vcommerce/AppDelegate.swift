@@ -8,6 +8,8 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import FBSDKCoreKit
+//import FBSDKLoginKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUserNotificationCenterDelegate {
@@ -65,8 +67,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
         
+        ApplicationDelegate.shared.application( application, didFinishLaunchingWithOptions: launchOptions )
+        
+        FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
@@ -105,6 +109,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
     }
     @available(iOS 9.0, *)
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        ApplicationDelegate.shared.application( app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation] )
         return GIDSignIn.sharedInstance().handle(url)
     }
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
@@ -138,10 +143,33 @@ extension AppDelegate : MessagingDelegate {
     }
 }
 
-
-
-
-
-
+//extension AppDelegate : LoginButtonDelegate{
+//    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+//        print("facebook login")
+//        if let error = error {
+//            print(error.localizedDescription)
+//            return
+//          }
+//        let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+//        Auth.auth().signIn(with: credential) { (authResult, error) in
+//          if let error = error {
+//            let authError = error as NSError
+//                print(authError.localizedDescription)
+//            } else {
+//                print(error!.localizedDescription)
+//              return
+//            }
+//            // ...
+//            return
+//          }
+//          // User is signed in
+//          // ...
+//
+//    }
+//
+//    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+//        print("facebook login out")
+//    }
+//}
 
 

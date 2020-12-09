@@ -109,6 +109,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL6-Jf-u2A">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <connections>
+                                            <action selector="facebookLogin:" destination="7ta-eX-fg4" eventType="touchUpInside" id="9tD-E6-esA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,6 +146,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="facebookLoginBtn" destination="NL6-Jf-u2A" id="bD3-7F-9WQ"/>
                         <outlet property="googleLoginBtn" destination="aUP-hu-LL7" id="sxb-pv-SUv"/>
                     </connections>
                 </viewController>

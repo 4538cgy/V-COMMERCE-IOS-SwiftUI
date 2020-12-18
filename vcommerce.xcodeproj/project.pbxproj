@@ -14,6 +14,7 @@
 		EC33C7EE2544575D004CBB9A /* APISearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */; };
 		EC33C7F325446AEE004CBB9A /* APISellUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7F225446AEE004CBB9A /* APISellUpload.swift */; };
 		EC33C7F8254470E7004CBB9A /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */; };
+		EC4D8812258CB1A2001F08EC /* CartVCRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D8811258CB1A2001F08EC /* CartVCRepresentation.swift */; };
 		EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6C9925270B2F004E3B61 /* ImageStore.swift */; };
 		EC5B6CDA252721FF004E3B61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6CD9252721FF004E3B61 /* MainView.swift */; };
 		EC6DD80D2540188C008479C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */; };
@@ -25,6 +26,10 @@
 		EC6DD841254053E8008479C4 /* APIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD840254053E8008479C4 /* APIBase.swift */; };
 		EC6DD87625405655008479C4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD87525405655008479C4 /* APIClient.swift */; };
 		EC6DD87B254056A4008479C4 /* APISearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD87A254056A4008479C4 /* APISearch.swift */; };
+		EC73AA78258CABA0005E5615 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73AA77258CABA0005E5615 /* CartViewController.swift */; };
+		EC73AAAE258CAE5F005E5615 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73AAAD258CAE5F005E5615 /* CartCell.swift */; };
+		EC79BC13258A57C900D61EEB /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC79BC12258A57C900D61EEB /* Cart.storyboard */; };
+		EC79BC18258A5B7100D61EEB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79BC17258A5B7100D61EEB /* CheckBox.swift */; };
 		EC9D2ACE2579195B00CF4D80 /* PagesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */; };
 		EC9D2AD6257A246C00CF4D80 /* ViewScaleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */; };
 		ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */; };
@@ -70,6 +75,7 @@
 		EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchDetail.swift; sourceTree = "<group>"; };
 		EC33C7F225446AEE004CBB9A /* APISellUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISellUpload.swift; sourceTree = "<group>"; };
 		EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		EC4D8811258CB1A2001F08EC /* CartVCRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVCRepresentation.swift; sourceTree = "<group>"; };
 		EC5B6C9925270B2F004E3B61 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		EC5B6CD9252721FF004E3B61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +87,10 @@
 		EC6DD840254053E8008479C4 /* APIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBase.swift; sourceTree = "<group>"; };
 		EC6DD87525405655008479C4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		EC6DD87A254056A4008479C4 /* APISearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearch.swift; sourceTree = "<group>"; };
+		EC73AA77258CABA0005E5615 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		EC73AAAD258CAE5F005E5615 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		EC79BC12258A57C900D61EEB /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		EC79BC17258A5B7100D61EEB /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		EC83BB15890EF507EC7E25F8 /* Pods-vcommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerceTests/Pods-vcommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesContainer.swift; sourceTree = "<group>"; };
 		EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScaleObject.swift; sourceTree = "<group>"; };
@@ -168,6 +178,8 @@
 				EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */,
 				ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */,
 				EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */,
+				EC79BC17258A5B7100D61EEB /* CheckBox.swift */,
+				ECC6081A25262DC1006763EE /* CustomTextField.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -185,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6DD81425401BA8008479C4 /* Login.storyboard */,
+				EC79BC12258A57C900D61EEB /* Cart.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -208,6 +221,16 @@
 				EC33C7F225446AEE004CBB9A /* APISellUpload.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		EC73AA7C258CABB4005E5615 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				EC73AA77258CABA0005E5615 /* CartViewController.swift */,
+				EC73AAAD258CAE5F005E5615 /* CartCell.swift */,
+				EC4D8811258CB1A2001F08EC /* CartVCRepresentation.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		EC9D2AC92579193700CF4D80 /* Main */ = {
@@ -299,6 +322,7 @@
 		ECAA017B252614EB00D15B93 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				EC73AA7C258CABB4005E5615 /* Cart */,
 				EC680CB92580E24C0055615D /* Login */,
 				EC9D2AC92579193700CF4D80 /* Main */,
 				ECAA01422522F49F00D15B93 /* ContentView.swift */,
@@ -309,7 +333,6 @@
 		ECC6081925262D62006763EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				ECC6081A25262DC1006763EE /* CustomTextField.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -425,6 +448,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC79BC13258A57C900D61EEB /* Cart.storyboard in Resources */,
 				ECAA014B2522F4A100D15B93 /* LaunchScreen.storyboard in Resources */,
 				ECAA01482522F4A100D15B93 /* Preview Assets.xcassets in Resources */,
 				ECC6085C25270522006763EE /* btn_signin_facebook.png in Resources */,
@@ -615,6 +639,7 @@
 				ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */,
 				EC5B6CDA252721FF004E3B61 /* MainView.swift in Sources */,
 				ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */,
+				EC4D8812258CB1A2001F08EC /* CartVCRepresentation.swift in Sources */,
 				ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */,
 				EC6DD82D254033E9008479C4 /* LoginVCRepresentaion.swift in Sources */,
 				EC6DD87B254056A4008479C4 /* APISearch.swift in Sources */,
@@ -624,9 +649,12 @@
 				EC9D2ACE2579195B00CF4D80 /* PagesContainer.swift in Sources */,
 				EC33C7EE2544575D004CBB9A /* APISearchDetail.swift in Sources */,
 				ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */,
+				EC73AA78258CABA0005E5615 /* CartViewController.swift in Sources */,
+				EC79BC18258A5B7100D61EEB /* CheckBox.swift in Sources */,
 				EC6DD81F25401ECB008479C4 /* RoundedBoarderButton.swift in Sources */,
 				EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */,
 				EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */,
+				EC73AAAE258CAE5F005E5615 /* CartCell.swift in Sources */,
 				ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */,
 				EC6DD841254053E8008479C4 /* APIBase.swift in Sources */,
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,

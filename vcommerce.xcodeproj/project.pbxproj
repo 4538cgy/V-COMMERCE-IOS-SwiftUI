@@ -22,6 +22,7 @@
 		EC5CE591258CF5EA00CA24AF /* ReviewVCRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE590258CF5EA00CA24AF /* ReviewVCRepresentation.swift */; };
 		EC5CE597258CF74A00CA24AF /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE596258CF74A00CA24AF /* ReviewCell.swift */; };
 		EC5CE59C258CFFA500CA24AF /* Star 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CE59B258CFFA500CA24AF /* Star 2.png */; };
+		EC5CE5A1258D01F800CA24AF /* ReviewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5CE5A0258D01F800CA24AF /* ReviewDetailViewController.swift */; };
 		EC6DD80D2540188C008479C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */; };
 		EC6DD81525401BA8008479C4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6DD81425401BA8008479C4 /* Login.storyboard */; };
 		EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */; };
@@ -88,6 +89,7 @@
 		EC5CE590258CF5EA00CA24AF /* ReviewVCRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewVCRepresentation.swift; sourceTree = "<group>"; };
 		EC5CE596258CF74A00CA24AF /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		EC5CE59B258CFFA500CA24AF /* Star 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star 2.png"; sourceTree = "<group>"; };
+		EC5CE5A0258D01F800CA24AF /* ReviewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailViewController.swift; sourceTree = "<group>"; };
 		EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC6DD81425401BA8008479C4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EC6DD81925401E7E008479C4 /* RoundedBoarderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBoarderView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				EC5CE58B258CF5CF00CA24AF /* ReviewViewController.swift */,
 				EC5CE590258CF5EA00CA24AF /* ReviewVCRepresentation.swift */,
 				EC5CE596258CF74A00CA24AF /* ReviewCell.swift */,
+				EC5CE5A0258D01F800CA24AF /* ReviewDetailViewController.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -669,6 +672,7 @@
 				EC33C7EE2544575D004CBB9A /* APISearchDetail.swift in Sources */,
 				ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */,
 				EC73AA78258CABA0005E5615 /* CartViewController.swift in Sources */,
+				EC5CE5A1258D01F800CA24AF /* ReviewDetailViewController.swift in Sources */,
 				EC79BC18258A5B7100D61EEB /* CheckBox.swift in Sources */,
 				EC5CE591258CF5EA00CA24AF /* ReviewVCRepresentation.swift in Sources */,
 				EC6DD81F25401ECB008479C4 /* RoundedBoarderButton.swift in Sources */,

@@ -18,7 +18,13 @@ class ReviewViewController : UIViewController , UITableViewDelegate, UITableView
         reviewTableView.delegate = self
         reviewTableView.dataSource = self
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReviewDetailViewController") as! ReviewDetailViewController
+        vc.modalPresentationStyle = .formSheet
+        self.present(vc, animated: false, completion: nil)
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }

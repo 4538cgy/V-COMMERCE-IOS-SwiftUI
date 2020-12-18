@@ -126,6 +126,7 @@ class APIClient : NSObject {
         let parameters = dict
         
         AF.request(url,method: .get, parameters: parameters,headers: request.headers()).responseJSON{ (response) in
+            print(response.response)
             switch response.result{
             case .success(let value) :
                 print(value)

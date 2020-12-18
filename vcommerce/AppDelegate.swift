@@ -143,33 +143,3 @@ extension AppDelegate : MessagingDelegate {
     }
 }
 
-//extension AppDelegate : LoginButtonDelegate{
-//    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-//        print("facebook login")
-//        if let error = error {
-//            print(error.localizedDescription)
-//            return
-//          }
-//        let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-//        Auth.auth().signIn(with: credential) { (authResult, error) in
-//          if let error = error {
-//            let authError = error as NSError
-//                print(authError.localizedDescription)
-//            } else {
-//                print(error!.localizedDescription)
-//              return
-//            }
-//            // ...
-//            return
-//          }
-//          // User is signed in
-//          // ...
-//
-//    }
-//
-//    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-//        print("facebook login out")
-//    }
-//}
-
-

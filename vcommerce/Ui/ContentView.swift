@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var isPresentedMain : Bool = false
     @State private var showingImagePicker : Bool = false
     @State private var isPresentedCart : Bool = false
+    @State private var isPresentedReview: Bool = false
     @State private var inputImage : UIImage?
     var body: some View {
         VStack{
@@ -27,7 +28,10 @@ struct ContentView: View {
                 self.isPresentedCart.toggle()
             }.fullScreenCover(isPresented: self.$isPresentedCart, content:
                                 CartVCRepresentation.init)
-            
+            Button("Review"){
+                self.isPresentedReview.toggle()
+            }.fullScreenCover(isPresented: self.$isPresentedReview, content:
+                                ReviewVCRepresentation.init)
             Button("메인화면"){
                 self.isPresentedMain.toggle()
             }.fullScreenCover(isPresented: self.$isPresentedMain, content: MainView.init)

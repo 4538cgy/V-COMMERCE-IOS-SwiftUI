@@ -10,6 +10,8 @@
 		0CC1CA2B8602DB78430E2E3C /* Pods_vcommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B650696AC702DDC484EACB0 /* Pods_vcommerceTests.framework */; };
 		23EF3B85ECF6416BD584C99A /* Pods_vcommerce_vcommerceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BC2C791F2A28D8954D32CC /* Pods_vcommerce_vcommerceUITests.framework */; };
 		9AA5C16631753DFEC4276262 /* Pods_vcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6FA4EDF6C8198037A07F01 /* Pods_vcommerce.framework */; };
+		EC1D42A8258E37E50032920F /* TestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1D42A7258E37E50032920F /* TestUI.swift */; };
+		EC1D42AD258E443E0032920F /* SwiftUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1D42AC258E443E0032920F /* SwiftUI.storyboard */; };
 		EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7832542817F004CBB9A /* Dictionary.swift */; };
 		EC33C7EE2544575D004CBB9A /* APISearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */; };
 		EC33C7F325446AEE004CBB9A /* APISellUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7F225446AEE004CBB9A /* APISellUpload.swift */; };
@@ -77,6 +79,8 @@
 		90BC2C791F2A28D8954D32CC /* Pods_vcommerce_vcommerceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vcommerce_vcommerceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DC3C8B8DDBEF8E5D1F6EAC /* Pods-vcommerce-vcommerceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce-vcommerceUITests.release.xcconfig"; path = "Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4B07E209200A3125CD50D99 /* Pods-vcommerce-vcommerceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce-vcommerceUITests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC1D42A7258E37E50032920F /* TestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUI.swift; sourceTree = "<group>"; };
+		EC1D42AC258E443E0032920F /* SwiftUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftUI.storyboard; sourceTree = "<group>"; };
 		EC33C7832542817F004CBB9A /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchDetail.swift; sourceTree = "<group>"; };
 		EC33C7F225446AEE004CBB9A /* APISellUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISellUpload.swift; sourceTree = "<group>"; };
@@ -180,6 +184,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EC1D42A6258E37CC0032920F /* TestUI */ = {
+			isa = PBXGroup;
+			children = (
+				EC1D42A7258E37E50032920F /* TestUI.swift */,
+			);
+			path = TestUI;
+			sourceTree = "<group>";
+		};
 		EC4D881C258CB59B001F08EC /* Review */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +234,7 @@
 				EC6DD81425401BA8008479C4 /* Login.storyboard */,
 				EC79BC12258A57C900D61EEB /* Cart.storyboard */,
 				EC4D881E258CB5BB001F08EC /* Review.storyboard */,
+				EC1D42AC258E443E0032920F /* SwiftUI.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -346,6 +359,7 @@
 		ECAA017B252614EB00D15B93 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				EC1D42A6258E37CC0032920F /* TestUI */,
 				EC4D881C258CB59B001F08EC /* Review */,
 				EC73AA7C258CABB4005E5615 /* Cart */,
 				EC680CB92580E24C0055615D /* Login */,
@@ -474,6 +488,7 @@
 				ECC6085C25270522006763EE /* btn_signin_facebook.png in Resources */,
 				ECC6085D25270522006763EE /* btn_signin_google.png in Resources */,
 				EC6DD81525401BA8008479C4 /* Login.storyboard in Resources */,
+				EC1D42AD258E443E0032920F /* SwiftUI.storyboard in Resources */,
 				ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */,
 				EC6DD80D2540188C008479C4 /* GoogleService-Info.plist in Resources */,
 			);
@@ -679,6 +694,7 @@
 				EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */,
 				EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */,
 				EC73AAAE258CAE5F005E5615 /* CartCell.swift in Sources */,
+				EC1D42A8258E37E50032920F /* TestUI.swift in Sources */,
 				ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */,
 				EC6DD841254053E8008479C4 /* APIBase.swift in Sources */,
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,

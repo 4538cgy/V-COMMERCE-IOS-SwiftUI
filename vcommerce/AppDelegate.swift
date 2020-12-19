@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
             } else {
                 print("\(error.localizedDescription)")
             }
-            NotificationCenter.default.post(
-                name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil, userInfo: nil)
+//            NotificationCenter.default.post(
+//                name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil, userInfo: nil)
             // [END_EXCLUDE]
             
             return

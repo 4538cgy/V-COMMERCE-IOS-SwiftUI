@@ -11,6 +11,7 @@ import UIKit
 import GoogleSignIn
 import FirebaseAuth
 import FBSDKLoginKit
+import SwiftUI
 
 class LoginViewController : UIViewController {
     @IBOutlet weak var googleLoginBtn: UIButton!
@@ -29,6 +30,7 @@ class LoginViewController : UIViewController {
         
         if isLoggedIn() {
             print("facebook Login already")
+            self.goMain()
         }else{
             print("need facebook Login")
         }
@@ -40,8 +42,14 @@ class LoginViewController : UIViewController {
             let isLoggedIn = accessToken != nil && !(accessToken?.isExpired ?? false)
             return isLoggedIn
         }
+    func goMain(){
+        
+        let swiftUIController = UIHostingController(rootView: MainView())
+        self.present(swiftUIController, animated: false, completion: nil)
+    }
     @objc func didRecieveTestNotification(_ notification: Notification) {
         print("Test Notification")
+        self.goMain()
         
      }
     @IBAction func googleLoginClick(_ sender: Any) {
@@ -79,6 +87,8 @@ class LoginViewController : UIViewController {
                     // ...
                     return
                   }
+                    
+                    self.goMain()
                   // User is signed in
                   // ...
                 }

@@ -34,16 +34,20 @@ struct TestUI: View {
                 self.isPresentedMain.toggle()
             }.fullScreenCover(isPresented: self.$isPresentedMain, content: MainView.init)
             Button("requestList"){
-                APISearch.Request(uid: "22bbccdd").send { (respose : SearchResponse) in
-                    print(respose)
-                    
+                APISearch(uid : "22bbccdd").send { (items) in
+                    print("\(items)")
+                } fail: { (errorMsg) in
+                    print(errorMsg)
                 }
+
             }
             Button("requestDetail"){
-                APISearchDetail.Request(pid: "22bbccdd").send { (response : SearchDetailResponse) in
-                    print(response)
-                    
+                APISearchDetail(pid:  "22bbccdd").send { (response) in
+                    print("\(response)")
+                } fail: { (errorMsg) in
+                    print("\(errorMsg)")
                 }
+
             }
             Button("upload"){
                 self.showingImagePicker = true

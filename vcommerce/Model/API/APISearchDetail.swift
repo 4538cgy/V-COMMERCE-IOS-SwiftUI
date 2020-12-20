@@ -6,27 +6,32 @@
 //
 
 import Foundation
-import ObjectMapper
-
+import Alamofire
 class APISearchDetail{
-    class Request : APIBase.Request {
-        public func send(success: ((SearchDetailResponse) -> Void)!, failure: ((Int, SearchDetailResponse?)->Void)! = nil) {
-            APIClient.send(request: self, response: SearchDetailResponse.self, success: success, failure: failure);
-        }
-        override func methods() -> [Any] {
-            return [MethodType.GET, "/api/v1/search/detail"]
-        }
-        override func getJSONEncoderData() -> Data?{
-            return try! JSONEncoder().encode(RequestParam(pid: self.pid))
-        }
-        struct RequestParam : Codable{
-            let pid : String
-        }
-        var pid:String! = ""
-        
-        init(pid: String!) {
-            super.init()
-            self.pid = pid
+    private var pid : String!
+    init(pid : String) {
+        self.pid = pid
+    }
+    public func send(success : @escaping (SearchDetailResponse)-> Void , fail : @escaping  (String) -> Void){
+        let url = APIClient.URL_BASE + "/api/v1/search/detail?pid=\(self.pid ?? "")"
+        AF.request(url, method: .get, parameters: nil,headers: ["Content-Type": "application/json"]).responseDecodable{
+            (response :  DataResponse<SearchDetailResponse,AFError>) in
+            
+            switch response.result{
+            case .success(let value) :
+                print(value)
+                if  value.code != nil &&  value.code != 200 {
+                    fail(value.msg)
+                }else {
+                    success(value)
+                }
+                break
+                
+            case .failure(let error) :
+                print(error)
+                fail("Network Error")
+                break
+            }
         }
         
     }

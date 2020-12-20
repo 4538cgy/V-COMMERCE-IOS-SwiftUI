@@ -43,9 +43,11 @@ struct PagesContainer <Content : View> : View {
                     }.onEnded { value in
                         if(self.startYGeture == true){
                             startYGeture = false
+                            // 하단뷰  3: 기본 , 4: 숨김 : 2 : 확장
                             if (value.translation.height - self.startYPoint) < -100 { // 하단에서 상단으로 슬라이드
-                                if(viewScale.bottomscale == 4){
-                                    viewScale.topScale = false
+                                viewScale.topScale += 1
+                                if viewScale.topScale > 3 {
+                                    viewScale.topScale = 3
                                 }
                                 viewScale.bottomscale -= 1
                                 if viewScale.bottomscale < 2 {
@@ -53,11 +55,12 @@ struct PagesContainer <Content : View> : View {
                                 }
                                 
                             }else if (value.translation.height - self.startYPoint) > 100 { // 상단에서 하단으로 슬라이드
-                                if(viewScale.bottomscale == 3){
-                                    viewScale.topScale = true
+                                
+                                viewScale.topScale -= 1
+                                if viewScale.topScale < 1 {
+                                    viewScale.topScale = 1 
                                 }
                                 viewScale.bottomscale += 1
-                                
                                 if viewScale.bottomscale > 4 {
                                     viewScale.bottomscale = 4
                                 }

@@ -14,6 +14,7 @@ struct TestUI: View {
     @State private var isPresentedCart : Bool = false
     @State private var isPresentedReview: Bool = false
     @State private var inputImage : UIImage?
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack{
             
@@ -51,6 +52,9 @@ struct TestUI: View {
             }
             Button("Crash test"){
                 fatalError()
+            }
+            Button("Back"){
+                self.presentationMode.wrappedValue.dismiss()
             }
             
         }

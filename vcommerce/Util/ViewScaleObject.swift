@@ -11,11 +11,17 @@ import SwiftUI
 
 class ViewScaleObject : ObservableObject {
     @Published var bottomscale : CGFloat = 3 // Bottom 기본 : 3.  확장 : 2 사라짐 :4
-    @Published var topScale : Bool = false
-    func update(){
-        bottomscale -= 1
-        if bottomscale == 0 {
-            bottomscale = 3
+    @Published var topScale : Int = 3 // Top 확장 : 1 , 기본 : 2 , 사라짐 : 3
+    
+    
+    func getTopScale() -> CGFloat {
+        if topScale == 1 {
+            return -300
+        }
+        else if(topScale == 2 ){
+            return -400
+        } else  {
+            return -600
         }
     }
 }

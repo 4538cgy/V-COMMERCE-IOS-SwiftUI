@@ -16,6 +16,8 @@
 		EC33C7EE2544575D004CBB9A /* APISearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */; };
 		EC33C7F325446AEE004CBB9A /* APISellUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7F225446AEE004CBB9A /* APISellUpload.swift */; };
 		EC33C7F8254470E7004CBB9A /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */; };
+		EC4A50CF2596523A00061CF2 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4A50CE2596523A00061CF2 /* Splash.storyboard */; };
+		EC4A50D5259652C700061CF2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4A50D4259652C700061CF2 /* SplashViewController.swift */; };
 		EC4D8812258CB1A2001F08EC /* CartVCRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D8811258CB1A2001F08EC /* CartVCRepresentation.swift */; };
 		EC4D881F258CB5BB001F08EC /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D881E258CB5BB001F08EC /* Review.storyboard */; };
 		EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B6C9925270B2F004E3B61 /* ImageStore.swift */; };
@@ -38,11 +40,11 @@
 		EC73AAAE258CAE5F005E5615 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73AAAD258CAE5F005E5615 /* CartCell.swift */; };
 		EC79BC13258A57C900D61EEB /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC79BC12258A57C900D61EEB /* Cart.storyboard */; };
 		EC79BC18258A5B7100D61EEB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79BC17258A5B7100D61EEB /* CheckBox.swift */; };
+		EC92E235259654A0004F941F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92E234259654A0004F941F /* SceneDelegate.swift */; };
 		EC9D2ACE2579195B00CF4D80 /* PagesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */; };
 		EC9D2AD6257A246C00CF4D80 /* ViewScaleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */; };
 		ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */; };
 		ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA013E2522F49F00D15B93 /* AppDelegate.swift */; };
-		ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01402522F49F00D15B93 /* SceneDelegate.swift */; };
 		ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01422522F49F00D15B93 /* ContentView.swift */; };
 		ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA01442522F4A100D15B93 /* Assets.xcassets */; };
 		ECAA01482522F4A100D15B93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA01472522F4A100D15B93 /* Preview Assets.xcassets */; };
@@ -85,6 +87,8 @@
 		EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchDetail.swift; sourceTree = "<group>"; };
 		EC33C7F225446AEE004CBB9A /* APISellUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISellUpload.swift; sourceTree = "<group>"; };
 		EC33C7F7254470E7004CBB9A /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		EC4A50CE2596523A00061CF2 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		EC4A50D4259652C700061CF2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		EC4D8811258CB1A2001F08EC /* CartVCRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVCRepresentation.swift; sourceTree = "<group>"; };
 		EC4D881E258CB5BB001F08EC /* Review.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Review.storyboard; sourceTree = "<group>"; };
 		EC5B6C9925270B2F004E3B61 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
@@ -108,12 +112,12 @@
 		EC79BC12258A57C900D61EEB /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		EC79BC17258A5B7100D61EEB /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		EC83BB15890EF507EC7E25F8 /* Pods-vcommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerceTests/Pods-vcommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC92E234259654A0004F941F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesContainer.swift; sourceTree = "<group>"; };
 		EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScaleObject.swift; sourceTree = "<group>"; };
 		ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewFuncs.swift; sourceTree = "<group>"; };
 		ECAA013B2522F49F00D15B93 /* vcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA013E2522F49F00D15B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECAA01402522F49F00D15B93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ECAA01422522F49F00D15B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECAA01442522F4A100D15B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECAA01472522F4A100D15B93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -192,6 +196,14 @@
 			path = TestUI;
 			sourceTree = "<group>";
 		};
+		EC4A50D3259652B400061CF2 /* Splah */ = {
+			isa = PBXGroup;
+			children = (
+				EC4A50D4259652C700061CF2 /* SplashViewController.swift */,
+			);
+			path = Splah;
+			sourceTree = "<group>";
+		};
 		EC4D881C258CB59B001F08EC /* Review */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +247,7 @@
 				EC79BC12258A57C900D61EEB /* Cart.storyboard */,
 				EC4D881E258CB5BB001F08EC /* Review.storyboard */,
 				EC1D42AC258E443E0032920F /* SwiftUI.storyboard */,
+				EC4A50CE2596523A00061CF2 /* Splash.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -310,7 +323,7 @@
 				ECAA017B252614EB00D15B93 /* Ui */,
 				ECAA0171252610BA00D15B93 /* Image */,
 				ECAA013E2522F49F00D15B93 /* AppDelegate.swift */,
-				ECAA01402522F49F00D15B93 /* SceneDelegate.swift */,
+				EC92E234259654A0004F941F /* SceneDelegate.swift */,
 				ECAA01442522F4A100D15B93 /* Assets.xcassets */,
 				EC6DD80C2540188C008479C4 /* GoogleService-Info.plist */,
 				ECAA01492522F4A100D15B93 /* LaunchScreen.storyboard */,
@@ -359,6 +372,7 @@
 		ECAA017B252614EB00D15B93 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				EC4A50D3259652B400061CF2 /* Splah */,
 				EC1D42A6258E37CC0032920F /* TestUI */,
 				EC4D881C258CB59B001F08EC /* Review */,
 				EC73AA7C258CABB4005E5615 /* Cart */,
@@ -491,6 +505,7 @@
 				EC1D42AD258E443E0032920F /* SwiftUI.storyboard in Resources */,
 				ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */,
 				EC6DD80D2540188C008479C4 /* GoogleService-Info.plist in Resources */,
+				EC4A50CF2596523A00061CF2 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,10 +686,10 @@
 			files = (
 				EC6DD82525402011008479C4 /* LoginViewController.swift in Sources */,
 				EC6DD87625405655008479C4 /* APIClient.swift in Sources */,
+				EC92E235259654A0004F941F /* SceneDelegate.swift in Sources */,
 				EC5CE58C258CF5CF00CA24AF /* ReviewViewController.swift in Sources */,
 				ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */,
 				EC5B6CDA252721FF004E3B61 /* MainView.swift in Sources */,
-				ECAA01412522F49F00D15B93 /* SceneDelegate.swift in Sources */,
 				EC4D8812258CB1A2001F08EC /* CartVCRepresentation.swift in Sources */,
 				ECC6081B25262DC1006763EE /* CustomTextField.swift in Sources */,
 				EC6DD82D254033E9008479C4 /* LoginVCRepresentaion.swift in Sources */,
@@ -695,6 +710,7 @@
 				EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */,
 				EC73AAAE258CAE5F005E5615 /* CartCell.swift in Sources */,
 				EC1D42A8258E37E50032920F /* TestUI.swift in Sources */,
+				EC4A50D5259652C700061CF2 /* SplashViewController.swift in Sources */,
 				ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */,
 				EC6DD841254053E8008479C4 /* APIBase.swift in Sources */,
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,

@@ -4,12 +4,12 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>사진 및 동영상 촬영을 위한 권한</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>동영상 첨부를 위한 앨범 접근 권한</string>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>마이크 사용을 위한 권한</string>
-    <key>NSAppleMusicUsageDescription</key>
-    <string>미디어 재생을 위한 권한</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>동영상 첨부를 위한 앨범 접근 권한</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>마이크 사용을 위한 권한</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>미디어 재생을 위한 권한</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -37,6 +37,8 @@
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
+					<key>UISceneStoryboardFile</key>
+					<string>Splash</string>
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
@@ -66,39 +68,39 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-          <key>CFBundleTypeRole</key>
-          <string>Editor</string>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fb337474030831274</string>
-        <string>com.googleusercontent.apps.368731289585-hqh26fiupqdl3jjglgft5sijo81irnfd</string>
-      </array>
-      </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>337474030831274</string>
-    <key>FacebookDisplayName</key>
-    <string>v-commerce</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-      <string>fbapi</string>
-      <string>fbapi20130214</string>
-      <string>fbapi20130410</string>
-      <string>fbapi20130702</string>
-      <string>fbapi20131010</string>
-      <string>fbapi20131219</string>
-      <string>fbapi20140410</string>
-      <string>fbapi20140116</string>
-      <string>fbapi20150313</string>
-      <string>fbapi20150629</string>
-      <string>fbapi20160328</string>
-      <string>fbauth</string>
-      <string>fb-messenger-share-api</string>
-      <string>fbauth2</string>
-      <string>fbshareextension</string>
-    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb337474030831274</string>
+				<string>com.googleusercontent.apps.368731289585-hqh26fiupqdl3jjglgft5sijo81irnfd</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>337474030831274</string>
+	<key>FacebookDisplayName</key>
+	<string>v-commerce</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fbapi20130214</string>
+		<string>fbapi20130410</string>
+		<string>fbapi20130702</string>
+		<string>fbapi20131010</string>
+		<string>fbapi20131219</string>
+		<string>fbapi20140410</string>
+		<string>fbapi20140116</string>
+		<string>fbapi20150313</string>
+		<string>fbapi20150629</string>
+		<string>fbapi20160328</string>
+		<string>fbauth</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 </dict>
 </plist>

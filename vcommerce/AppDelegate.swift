@@ -13,6 +13,8 @@ import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUserNotificationCenterDelegate {
+    var window: UIWindow?
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         print("sing in")
         if let error = error {
@@ -21,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
             } else {
                 print("\(error.localizedDescription)")
             }
-//            NotificationCenter.default.post(
-//                name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil, userInfo: nil)
+            NotificationCenter.default.post(
+                name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil, userInfo: nil)
             // [END_EXCLUDE]
             
             return
@@ -58,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
             let email = user.profile.email
             // [START_EXCLUDE]
             NotificationCenter.default.post(
-                name: Notification.Name(rawValue: "ToggleAuthUINotification"),
+                name: Notification.Name(rawValue: "ToggleAuthLoginNotification"),
                 object: nil,
                 userInfo: ["statusText": "Signed in user:\n\(fullName!)"])
             // [END_EXCLUDE]
@@ -114,6 +116,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
     }
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return GIDSignIn.sharedInstance().handle(url)
+    }
+    
+    func transition(withRootViewController viewController: UIViewController, withTransitionAnimationOption option: UIView.AnimationOptions) {
+        UIView.transition(with: self.window!, duration: 1, options: option, animations: {
+            self.window?.rootViewController = viewController
+        }, completion: nil)
     }
     
 }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import UIKit
 import GoogleSignIn
 import FirebaseAuth
@@ -45,6 +44,7 @@ class LoginViewController : UIViewController {
     func goMain(){
         
         let swiftUIController = UIHostingController(rootView: MainView())
+        swiftUIController.modalPresentationStyle = .fullScreen
         self.present(swiftUIController, animated: false, completion: nil)
     }
     @objc func didRecieveTestNotification(_ notification: Notification) {

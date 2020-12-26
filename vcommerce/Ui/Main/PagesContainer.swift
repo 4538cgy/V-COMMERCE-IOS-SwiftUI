@@ -23,7 +23,7 @@ struct PagesContainer <Content : View> : View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack {
+            ZStack {
                 HStack (spacing: 0){
                     self.content
                         .frame(width: geometry.size.width)
@@ -45,28 +45,10 @@ struct PagesContainer <Content : View> : View {
                             startYGeture = false
                             // 하단뷰  3: 기본 , 4: 숨김 : 2 : 확장
                             if (value.translation.height - self.startYPoint) < -100 { // 하단에서 상단으로 슬라이드
-                                viewScale.topScale -= 1
-                                if viewScale.topScale < 1 {
-                                    viewScale.topScale = 1
-                                }
-                                viewScale.bottomscale -= 1
-                                if viewScale.bottomscale < 2 {
-                                    viewScale.bottomscale = 2
-                                }
+                                viewScale.setUpSwipe()
                                 
                             }else if (value.translation.height - self.startYPoint) > 100 { // 상단에서 하단으로 슬라이드
-                                
-                                
-                                viewScale.bottomscale += 1
-                                if viewScale.bottomscale > 4 {
-                                    viewScale.bottomscale = 4
-                                }
-                                if(viewScale.bottomscale == 4){
-                                    viewScale.topScale += 1
-                                    if viewScale.topScale > 2 {
-                                        viewScale.topScale = 2
-                                    }
-                                }
+                                viewScale.setDownSwipe()
                             }
                         }
                         var weakGesture : CGFloat = 0
@@ -85,13 +67,24 @@ struct PagesContainer <Content : View> : View {
                         
                     }
                 )
+                VStack{
+                    Spacer()
+                    HStack{
+                        Spacer()
+                        VStack{
+                            Image("btn-profile")
+                            Image("Like")
+                        }.frame(height: 240, alignment: .center).offset(x: -8)
+                    }
+                }
+                
                 // 하단 인디케이터 코드
-//                HStack {
-//                    ForEach(0..<self.contentCount) { num in
-//                        Circle().frame(width: 10, height: 10)
-//                            .foregroundColor(self.index == num ? .primary : Color.secondary.opacity(0.5))
-//                    }
-//                }
+                //                HStack {
+                //                    ForEach(0..<self.contentCount) { num in
+                //                        Circle().frame(width: 10, height: 10)
+                //                            .foregroundColor(self.index == num ? .primary : Color.secondary.opacity(0.5))
+                //                    }
+                //                }
             }
         }
     }

@@ -17,6 +17,7 @@ struct MainView: View {
     @State var startYPoint : CGFloat = 0
     var body: some View {
         ZStack{
+            VStack{
             PagesContainer(contentCount: 4,viewScale : viewScale) {
                 RoundedRectangle(cornerRadius: 20)
                     .foregroundColor(Color.green.opacity(0.3))
@@ -30,7 +31,8 @@ struct MainView: View {
                 RoundedRectangle(cornerRadius: 20)
                     .foregroundColor(Color.blue.opacity(0.3))
                     .padding()
-            }
+            }.frame(height: UIScreen.main.bounds.height - 100 , alignment: .center).offset(x: 0, y: -10)
+            }.frame(height : UIScreen.main.bounds.height, alignment: getAlignment(isState: viewScale.isMainViewStat))
             ZStack{
                 topView()
                     .offset(x: 0, y: viewScale.getTopScale())
@@ -53,7 +55,13 @@ struct MainView: View {
         
         
     }
-
+    func getAlignment(isState : Bool) -> Alignment {
+        if isState {
+            return .bottom
+        }else{
+            return .top
+        }
+    }
     func checkStart(height : CGFloat){
         if(self.startYGeture == false){
             startYGeture = true
@@ -64,24 +72,10 @@ struct MainView: View {
         if(self.startYGeture == true){
             startYGeture = false
             if (height - self.startYPoint) < -100 { // 하단에서 상단으로 슬라이드
-                viewScale.topScale += 1
-                if viewScale.topScale > 3 {
-                    viewScale.topScale = 3
-                }
-                viewScale.bottomscale -= 1
-                if viewScale.bottomscale < 2 {
-                    viewScale.bottomscale = 2
-                }
+                viewScale.setUpSwipe()
                 
-            }else if (height - self.startYPoint) > 100 { // 상단에서 하단으로 슬라이드
-                viewScale.topScale -= 1
-                if viewScale.topScale < 1 {
-                    viewScale.topScale = 1
-                }
-                viewScale.bottomscale += 1
-                if viewScale.bottomscale > 4 {
-                    viewScale.bottomscale = 4
-                }
+            }else if (height - self.startYPoint) > 100 { // 상단에서 하단으로 슬라이드  
+                viewScale.setDownSwipe()
             }
         }
     }

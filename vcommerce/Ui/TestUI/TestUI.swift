@@ -13,6 +13,7 @@ struct TestUI: View {
     @State private var showingImagePicker : Bool = false
     @State private var isPresentedCart : Bool = false
     @State private var isPresentedReview: Bool = false
+    @State private var isPresentedSelectOption : Bool = false
     @State private var inputImage : UIImage?
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
@@ -57,6 +58,10 @@ struct TestUI: View {
             Button("Crash test"){
                 fatalError()
             }
+            Button("Selct Option"){
+                self.isPresentedSelectOption.toggle()
+            }.fullScreenCover(isPresented: self.$isPresentedSelectOption, content:
+                                SelectOptionVCRepresentation.init)
             Button("Back"){
                 self.presentationMode.wrappedValue.dismiss()
             }

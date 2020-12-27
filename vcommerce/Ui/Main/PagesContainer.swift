@@ -67,16 +67,6 @@ struct PagesContainer <Content : View> : View {
                         
                     }
                 )
-                VStack{
-                    Spacer()
-                    HStack{
-                        Spacer()
-                        VStack{
-                            Image("btn-profile")
-                            Image("Like")
-                        }.frame(height: 240, alignment: .center).offset(x: -8)
-                    }
-                }
                 
                 // 하단 인디케이터 코드
                 //                HStack {

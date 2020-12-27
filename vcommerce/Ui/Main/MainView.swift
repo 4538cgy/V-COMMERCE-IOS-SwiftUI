@@ -18,20 +18,68 @@ struct MainView: View {
     var body: some View {
         ZStack{
             VStack{
-            PagesContainer(contentCount: 4,viewScale : viewScale) {
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(Color.green.opacity(0.3))
-                    .padding()
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(Color.yellow.opacity(0.3))
-                    .padding()
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(Color.red.opacity(0.3))
-                    .padding()
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(Color.blue.opacity(0.3))
-                    .padding()
-            }.frame(height: UIScreen.main.bounds.height - 100 , alignment: .center).offset(x: 0, y: -10)
+                PagesContainer(contentCount: 4,viewScale : viewScale) {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color.green.opacity(0.3))
+                            .padding()
+                        VStack{
+                            Spacer()
+                            HStack{
+                                Spacer()
+                                VStack{
+                                    Image("btn-profile")
+                                    Image("Like")
+                                }.frame(height: 240, alignment: .center).offset(x: -8)
+                            }
+                        }
+                    }
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color.yellow.opacity(0.3))
+                            .padding()
+                        VStack{
+                            Spacer()
+                            HStack{
+                                Spacer()
+                                VStack{
+                                    Image("btn-profile")
+                                    Image("Like")
+                                }.frame(height: 240, alignment: .center).offset(x: -8)
+                            }
+                        }
+                    }
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color.red.opacity(0.3))
+                            .padding()
+                        VStack{
+                            Spacer()
+                            HStack{
+                                Spacer()
+                                VStack{
+                                    Image("btn-profile")
+                                    Image("Like")
+                                }.frame(height: 240, alignment: .center).offset(x: -8)
+                            }
+                        }
+                    }
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color.blue.opacity(0.3))
+                            .padding()
+                        VStack{
+                            Spacer()
+                            HStack{
+                                Spacer()
+                                VStack{
+                                    Image("btn-profile")
+                                    Image("Like")
+                                }.frame(height: 240, alignment: .center).offset(x: -8)
+                            }
+                        }
+                    }
+                }.frame(height: UIScreen.main.bounds.height - 100 , alignment: .center).offset(x: 0, y: -10)
             }.frame(height : UIScreen.main.bounds.height, alignment: getAlignment(isState: viewScale.isMainViewStat))
             ZStack{
                 topView()
@@ -93,17 +141,17 @@ struct topView : View {
     
     @State private var isPresentedTest : Bool = false
     var body: some View{
-
+        
         VStack{
             VStack{
-
+                
                 HStack(alignment: .center){
                     Button("Setting"){
                         
                     }
                     Button("TestUI"){
-                            self.isPresentedTest.toggle()
-                        }.fullScreenCover(isPresented: self.$isPresentedTest, content: TestUI.init)
+                        self.isPresentedTest.toggle()
+                    }.fullScreenCover(isPresented: self.$isPresentedTest, content: TestUI.init)
                     Spacer()
                 }.padding(.top, 270).padding([.leading, .bottom, .trailing], 10.0)
                 

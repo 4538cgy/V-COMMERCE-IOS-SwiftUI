@@ -31,13 +31,12 @@ class LoginViewController : UIViewController {
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(didRecieveTestNotification(_:)), name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil)
-        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didRecieveTestNotification(_:)), name: Notification.Name(rawValue: "LoginVCAuthUINotification"), object: nil)
         if isLoggedIn() {
-            print("facebook Login already")
+            print("LoginVC facebook Login already")
             self.goMain()
         }else{
-            print("need facebook Login")
+            print("LoginVC need facebook Login")
         }
     }
     
@@ -53,7 +52,7 @@ class LoginViewController : UIViewController {
         self.present(swiftUIController, animated: false, completion: nil)
     }
     @objc func didRecieveTestNotification(_ notification: Notification) {
-        print("Test Notification")
+        print("LoginVC Test Notification")
         self.goMain()
         
      }
@@ -102,12 +101,15 @@ class LoginViewController : UIViewController {
     }
     
     @IBAction func goLoginEmain(_ sender: UIButton) {
-        performSegue(withIdentifier: "LoginEmailSegue", sender: self)
+//        performSegue(withIdentifier: "LoginEmailSegue", sender: self)
+        let vc = self.storyboard?.instantiateViewController(identifier: "LoginEmailViewController") as! LoginEmailViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "LoginEmailSegue" {
-            //LoginEamilView controller 호출전 준비
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "LoginEmailSegue" {
+//            //LoginEamilView controller 호출전 준비
+//        }
+//    }
 }

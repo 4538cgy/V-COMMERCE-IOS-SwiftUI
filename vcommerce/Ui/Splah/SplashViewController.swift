@@ -19,8 +19,8 @@ class SplashViewController : UIViewController{
         super.viewDidLoad()
 
 
-        NotificationCenter.default.addObserver(self, selector: #selector(didRecieveLoginNotification(_:)), name: Notification.Name(rawValue: "ToggleAuthLoginNotification"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(didRecieveNoLoginNotification(_:)), name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didRecieveLoginNotification(_:)), name: Notification.Name(rawValue: "SplashVCAuthLoginNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(didRecieveNoLoginNotification(_:)), name: Notification.Name(rawValue: "SplashVCAuthNotLoginNotification"), object: nil)
 
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -32,15 +32,11 @@ class SplashViewController : UIViewController{
 
     
     @objc func didRecieveLoginNotification(_ notification: Notification) {
-        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthLoginNotification"), object: nil)
-        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil)
-//        print("Login")
+        print("SplahVC Login")
         goMain()
     }
     @objc func didRecieveNoLoginNotification(_ notification: Notification) {
-        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthLoginNotification"), object: nil)
-        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil)
-//        print("No Login")
+        print("SplahVC No Login")
         if isLoggedIn() {
 //            print("facebook Login already")
             self.goMain()

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
                 print("\(error.localizedDescription)")
             }
             NotificationCenter.default.post(
-                name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil, userInfo: nil)
+                name: Notification.Name(rawValue: "SplashVCAuthNotLoginNotification"), object: nil, userInfo: nil)
             // [END_EXCLUDE]
             
             return
@@ -60,7 +60,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
             let email = user.profile.email
             // [START_EXCLUDE]
             NotificationCenter.default.post(
-                name: Notification.Name(rawValue: "ToggleAuthLoginNotification"),
+                name: Notification.Name(rawValue: "SplashVCAuthLoginNotification"),
+                object: nil,
+                userInfo: ["statusText": "Signed in user:\n\(fullName!)"])
+            NotificationCenter.default.post(
+                name: Notification.Name(rawValue: "LoginVCAuthUINotification"),
                 object: nil,
                 userInfo: ["statusText": "Signed in user:\n\(fullName!)"])
             // [END_EXCLUDE]

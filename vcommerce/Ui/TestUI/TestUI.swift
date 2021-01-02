@@ -14,56 +14,64 @@ struct TestUI: View {
     @State private var isPresentedCart : Bool = false
     @State private var isPresentedReview: Bool = false
     @State private var isPresentedSelectOption : Bool = false
+    @State private var isPresentedLoginEamil : Bool = false
     @State private var inputImage : UIImage?
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
         VStack{
-            
-            Button("로그인"){
-                self.isPresentedLogin.toggle()
-            }.fullScreenCover(isPresented: self.$isPresentedLogin, content:
-                                LoginVCRepresentation.init)
-            Button("Cart"){
-                self.isPresentedCart.toggle()
-            }.fullScreenCover(isPresented: self.$isPresentedCart, content:
-                                CartVCRepresentation.init)
-            Button("Review"){
-                self.isPresentedReview.toggle()
-            }.fullScreenCover(isPresented: self.$isPresentedReview, content:
-                                ReviewVCRepresentation.init)
-            Button("메인화면"){
-                self.isPresentedMain.toggle()
-            }.fullScreenCover(isPresented: self.$isPresentedMain, content: MainView.init)
-            Button("requestList"){
-                APISearch(uid : "22bbccdd").send { (items) in
-                    print("\(items)")
-                } fail: { (errorMsg) in
-                    print(errorMsg)
+            VStack{
+                Button("로그인"){
+                    self.isPresentedLogin.toggle()
+                }.fullScreenCover(isPresented: self.$isPresentedLogin, content:
+                                    LoginVCRepresentation.init)
+                Button("Cart"){
+                    self.isPresentedCart.toggle()
+                }.fullScreenCover(isPresented: self.$isPresentedCart, content:
+                                    CartVCRepresentation.init)
+                Button("Review"){
+                    self.isPresentedReview.toggle()
+                }.fullScreenCover(isPresented: self.$isPresentedReview, content:
+                                    ReviewVCRepresentation.init)
+                Button("메인화면"){
+                    self.isPresentedMain.toggle()
+                }.fullScreenCover(isPresented: self.$isPresentedMain, content: MainView.init)
+                Button("requestList"){
+                    APISearch(uid : "22bbccdd").send { (items) in
+                        print("\(items)")
+                    } fail: { (errorMsg) in
+                        print(errorMsg)
+                    }
+                    
                 }
-
             }
-            Button("requestDetail"){
-                APISearchDetail(pid:  "22bbccdd").send { (response) in
-                    print("\(response)")
-                } fail: { (errorMsg) in
-                    print("\(errorMsg)")
+            VStack{
+                Button("requestDetail"){
+                    APISearchDetail(pid:  "22bbccdd").send { (response) in
+                        print("\(response)")
+                    } fail: { (errorMsg) in
+                        print("\(errorMsg)")
+                    }
+                    
                 }
-
-            }
-            Button("upload"){
-                self.showingImagePicker = true
-            }.sheet(isPresented: $showingImagePicker, onDismiss: loadImage){
-                ImagePicker(image: self.$inputImage)
-            }
-            Button("Crash test"){
-                fatalError()
-            }
-            Button("Selct Option"){
-                self.isPresentedSelectOption.toggle()
-            }.fullScreenCover(isPresented: self.$isPresentedSelectOption, content:
-                                SelectOptionVCRepresentation.init)
-            Button("Back"){
-                self.presentationMode.wrappedValue.dismiss()
+                Button("upload"){
+                    self.showingImagePicker = true
+                }.sheet(isPresented: $showingImagePicker, onDismiss: loadImage){
+                    ImagePicker(image: self.$inputImage)
+                }
+                Button("Crash test"){
+                    fatalError()
+                }
+                Button("Login Email"){
+                    self.isPresentedLoginEamil.toggle()
+                }.fullScreenCover(isPresented: self.$isPresentedLoginEamil, content:
+                                    LoginEmailVCRepresentation.init)
+                Button("Selct Option"){
+                    self.isPresentedSelectOption.toggle()
+                }.fullScreenCover(isPresented: self.$isPresentedSelectOption, content:
+                                    SelectOptionVCRepresentation.init)
+                Button("Back"){
+                    self.presentationMode.wrappedValue.dismiss()
+                }
             }
             
         }

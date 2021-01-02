@@ -12,6 +12,7 @@
 		9AA5C16631753DFEC4276262 /* Pods_vcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6FA4EDF6C8198037A07F01 /* Pods_vcommerce.framework */; };
 		EC0F472C25A09C9800583028 /* EmailRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F472B25A09C9800583028 /* EmailRegistViewController.swift */; };
 		EC0F473125A09DB800583028 /* ProfileRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F473025A09DB800583028 /* ProfileRegistViewController.swift */; };
+		EC0F473825A0A34300583028 /* VideoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F473725A0A34300583028 /* VideoUploadViewController.swift */; };
 		EC1D42A8258E37E50032920F /* TestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1D42A7258E37E50032920F /* TestUI.swift */; };
 		EC1D42AD258E443E0032920F /* SwiftUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1D42AC258E443E0032920F /* SwiftUI.storyboard */; };
 		EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7832542817F004CBB9A /* Dictionary.swift */; };
@@ -45,7 +46,7 @@
 		EC744B9A2598A7F200DE155A /* FirstOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC744B992598A7F200DE155A /* FirstOptionCell.swift */; };
 		EC744BA22598A82C00DE155A /* SecondOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC744BA12598A82C00DE155A /* SecondOptionCell.swift */; };
 		EC744BA72598A84D00DE155A /* ThirdOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC744BA62598A84D00DE155A /* ThirdOptionCell.swift */; };
-		EC79BC13258A57C900D61EEB /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC79BC12258A57C900D61EEB /* Cart.storyboard */; };
+		EC79BC13258A57C900D61EEB /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC79BC12258A57C900D61EEB /* BuySell.storyboard */; };
 		EC79BC18258A5B7100D61EEB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79BC17258A5B7100D61EEB /* CheckBox.swift */; };
 		EC92E235259654A0004F941F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92E234259654A0004F941F /* SceneDelegate.swift */; };
 		EC9D2ACE2579195B00CF4D80 /* PagesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */; };
@@ -92,6 +93,7 @@
 		C4B07E209200A3125CD50D99 /* Pods-vcommerce-vcommerceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerce-vcommerceUITests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerce-vcommerceUITests/Pods-vcommerce-vcommerceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0F472B25A09C9800583028 /* EmailRegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistViewController.swift; sourceTree = "<group>"; };
 		EC0F473025A09DB800583028 /* ProfileRegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegistViewController.swift; sourceTree = "<group>"; };
+		EC0F473725A0A34300583028 /* VideoUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUploadViewController.swift; sourceTree = "<group>"; };
 		EC1D42A7258E37E50032920F /* TestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUI.swift; sourceTree = "<group>"; };
 		EC1D42AC258E443E0032920F /* SwiftUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftUI.storyboard; sourceTree = "<group>"; };
 		EC33C7832542817F004CBB9A /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -125,7 +127,7 @@
 		EC744B992598A7F200DE155A /* FirstOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOptionCell.swift; sourceTree = "<group>"; };
 		EC744BA12598A82C00DE155A /* SecondOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOptionCell.swift; sourceTree = "<group>"; };
 		EC744BA62598A84D00DE155A /* ThirdOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOptionCell.swift; sourceTree = "<group>"; };
-		EC79BC12258A57C900D61EEB /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		EC79BC12258A57C900D61EEB /* BuySell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BuySell.storyboard; sourceTree = "<group>"; };
 		EC79BC17258A5B7100D61EEB /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		EC83BB15890EF507EC7E25F8 /* Pods-vcommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vcommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-vcommerceTests/Pods-vcommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC92E234259654A0004F941F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,6 +208,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EC0F473525A0A2CF00583028 /* firebase API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "firebase API";
+			sourceTree = "<group>";
+		};
+		EC0F473625A0A31800583028 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		EC1D42A6258E37CC0032920F /* TestUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6DD81425401BA8008479C4 /* Login.storyboard */,
-				EC79BC12258A57C900D61EEB /* Cart.storyboard */,
+				EC79BC12258A57C900D61EEB /* BuySell.storyboard */,
 				EC4D881E258CB5BB001F08EC /* Review.storyboard */,
 				EC1D42AC258E443E0032920F /* SwiftUI.storyboard */,
 				EC4A50CE2596523A00061CF2 /* Splash.storyboard */,
@@ -277,6 +293,7 @@
 		EC6DD83E254053A6008479C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC0F473525A0A2CF00583028 /* firebase API */,
 				EC6DD83F254053BD008479C4 /* API */,
 				EC6DD87525405655008479C4 /* APIClient.swift */,
 				ECAFD4882564F8450009E598 /* ResponseCodable.swift */,
@@ -295,9 +312,10 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		EC73AA7C258CABB4005E5615 /* Cart */ = {
+		EC73AA7C258CABB4005E5615 /* BuySell */ = {
 			isa = PBXGroup;
 			children = (
+				EC0F473725A0A34300583028 /* VideoUploadViewController.swift */,
 				EC73AA77258CABA0005E5615 /* CartViewController.swift */,
 				EC73AAAD258CAE5F005E5615 /* CartCell.swift */,
 				EC4D8811258CB1A2001F08EC /* CartVCRepresentation.swift */,
@@ -307,7 +325,7 @@
 				EC744BA12598A82C00DE155A /* SecondOptionCell.swift */,
 				EC744BA62598A84D00DE155A /* ThirdOptionCell.swift */,
 			);
-			path = Cart;
+			path = BuySell;
 			sourceTree = "<group>";
 		};
 		EC9D2AC92579193700CF4D80 /* Main */ = {
@@ -399,10 +417,11 @@
 		ECAA017B252614EB00D15B93 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				EC0F473625A0A31800583028 /* Video */,
 				EC4A50D3259652B400061CF2 /* Splah */,
 				EC1D42A6258E37CC0032920F /* TestUI */,
 				EC4D881C258CB59B001F08EC /* Review */,
-				EC73AA7C258CABB4005E5615 /* Cart */,
+				EC73AA7C258CABB4005E5615 /* BuySell */,
 				EC680CB92580E24C0055615D /* Login */,
 				EC9D2AC92579193700CF4D80 /* Main */,
 				ECAA01422522F49F00D15B93 /* ContentView.swift */,
@@ -522,7 +541,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4D881F258CB5BB001F08EC /* Review.storyboard in Resources */,
-				EC79BC13258A57C900D61EEB /* Cart.storyboard in Resources */,
+				EC79BC13258A57C900D61EEB /* BuySell.storyboard in Resources */,
 				ECAA014B2522F4A100D15B93 /* LaunchScreen.storyboard in Resources */,
 				EC5CE59C258CFFA500CA24AF /* Star 2.png in Resources */,
 				ECAA01482522F4A100D15B93 /* Preview Assets.xcassets in Resources */,
@@ -751,6 +770,7 @@
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,
 				ECAFD4892564F8450009E598 /* ResponseCodable.swift in Sources */,
 				ECA7FF0925A0814800C4DC2A /* LoginEamilViewController.swift in Sources */,
+				EC0F473825A0A34300583028 /* VideoUploadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

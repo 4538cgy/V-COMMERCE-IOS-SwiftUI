@@ -49,6 +49,7 @@
 		EC9D2ACE2579195B00CF4D80 /* PagesContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */; };
 		EC9D2AD6257A246C00CF4D80 /* ViewScaleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */; };
 		ECA4DA31254DA4EF00D11B40 /* MainViewFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */; };
+		ECA7FF0925A0814800C4DC2A /* LoginEamilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7FF0825A0814800C4DC2A /* LoginEamilViewController.swift */; };
 		ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA013E2522F49F00D15B93 /* AppDelegate.swift */; };
 		ECAA01432522F49F00D15B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA01422522F49F00D15B93 /* ContentView.swift */; };
 		ECAA01452522F4A100D15B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECAA01442522F4A100D15B93 /* Assets.xcassets */; };
@@ -126,6 +127,7 @@
 		EC9D2ACD2579195B00CF4D80 /* PagesContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesContainer.swift; sourceTree = "<group>"; };
 		EC9D2AD5257A246C00CF4D80 /* ViewScaleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScaleObject.swift; sourceTree = "<group>"; };
 		ECA4DA30254DA4EF00D11B40 /* MainViewFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewFuncs.swift; sourceTree = "<group>"; };
+		ECA7FF0825A0814800C4DC2A /* LoginEamilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEamilViewController.swift; sourceTree = "<group>"; };
 		ECAA013B2522F49F00D15B93 /* vcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAA013E2522F49F00D15B93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECAA01422522F49F00D15B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			children = (
 				EC6DD82425402011008479C4 /* LoginViewController.swift */,
 				EC6DD82C254033E9008479C4 /* LoginVCRepresentaion.swift */,
+				ECA7FF0825A0814800C4DC2A /* LoginEamilViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -735,6 +738,7 @@
 				EC6DD841254053E8008479C4 /* APIBase.swift in Sources */,
 				EC5B6C9A25270B2F004E3B61 /* ImageStore.swift in Sources */,
 				ECAFD4892564F8450009E598 /* ResponseCodable.swift in Sources */,
+				ECA7FF0925A0814800C4DC2A /* LoginEamilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

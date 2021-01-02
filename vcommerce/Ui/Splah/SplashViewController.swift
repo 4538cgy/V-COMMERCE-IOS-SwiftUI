@@ -32,17 +32,22 @@ class SplashViewController : UIViewController{
 
     
     @objc func didRecieveLoginNotification(_ notification: Notification) {
-        print("Login")
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthLoginNotification"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil)
+//        print("Login")
         goMain()
     }
     @objc func didRecieveNoLoginNotification(_ notification: Notification) {
-        print("No Login")
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthLoginNotification"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil)
+//        print("No Login")
         if isLoggedIn() {
-            print("facebook Login already")
+//            print("facebook Login already")
             self.goMain()
         }else{
             self.goLogin()
         }
+        
     }
     func goLogin(){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController

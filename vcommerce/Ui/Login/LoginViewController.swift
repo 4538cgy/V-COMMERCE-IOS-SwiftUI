@@ -20,20 +20,25 @@ class LoginViewController : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //viewDidLoad에서 호출 시 splash 와 반복으로 돌아서 문제가 발생
         GIDSignIn.sharedInstance()?.presentingViewController = self
 
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
         NotificationCenter.default.addObserver(self, selector: #selector(didRecieveTestNotification(_:)), name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil)
-        
+        NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "ToggleAuthNotLoginNotification"), object: nil)
         if isLoggedIn() {
             print("facebook Login already")
             self.goMain()
         }else{
             print("need facebook Login")
         }
-      
     }
     
     func isLoggedIn() -> Bool {
@@ -96,4 +101,13 @@ class LoginViewController : UIViewController {
         }
     }
     
+    @IBAction func goLoginEmain(_ sender: UIButton) {
+        performSegue(withIdentifier: "LoginEmailSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LoginEmailSegue" {
+            //LoginEamilView controller 호출전 준비
+        }
+    }
 }

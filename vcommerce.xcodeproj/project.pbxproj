@@ -15,6 +15,8 @@
 		EC0F473825A0A34300583028 /* VideoUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F473725A0A34300583028 /* VideoUploadViewController.swift */; };
 		EC1D42A8258E37E50032920F /* TestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1D42A7258E37E50032920F /* TestUI.swift */; };
 		EC1D42AD258E443E0032920F /* SwiftUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1D42AC258E443E0032920F /* SwiftUI.storyboard */; };
+		EC1F866425A4520300DABBD9 /* FindIdFromEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F866325A4520300DABBD9 /* FindIdFromEmailViewController.swift */; };
+		EC1F866F25A4595A00DABBD9 /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F866E25A4595A00DABBD9 /* CongratulationViewController.swift */; };
 		EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7832542817F004CBB9A /* Dictionary.swift */; };
 		EC33C7EE2544575D004CBB9A /* APISearchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */; };
 		EC33C7F325446AEE004CBB9A /* APISellUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33C7F225446AEE004CBB9A /* APISellUpload.swift */; };
@@ -96,6 +98,8 @@
 		EC0F473725A0A34300583028 /* VideoUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUploadViewController.swift; sourceTree = "<group>"; };
 		EC1D42A7258E37E50032920F /* TestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUI.swift; sourceTree = "<group>"; };
 		EC1D42AC258E443E0032920F /* SwiftUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwiftUI.storyboard; sourceTree = "<group>"; };
+		EC1F866325A4520300DABBD9 /* FindIdFromEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIdFromEmailViewController.swift; sourceTree = "<group>"; };
+		EC1F866E25A4595A00DABBD9 /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
 		EC33C7832542817F004CBB9A /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		EC33C7ED2544575D004CBB9A /* APISearchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchDetail.swift; sourceTree = "<group>"; };
 		EC33C7F225446AEE004CBB9A /* APISellUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISellUpload.swift; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 				ECA7FF3A25A0952F00C4DC2A /* LoginEmaillVCRepresentation.swift */,
 				EC0F472B25A09C9800583028 /* EmailRegistViewController.swift */,
 				EC0F473025A09DB800583028 /* ProfileRegistViewController.swift */,
+				EC1F866325A4520300DABBD9 /* FindIdFromEmailViewController.swift */,
+				EC1F866E25A4595A00DABBD9 /* CongratulationViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -737,6 +743,7 @@
 				EC744BA72598A84D00DE155A /* ThirdOptionCell.swift in Sources */,
 				EC5CE58C258CF5CF00CA24AF /* ReviewViewController.swift in Sources */,
 				EC0F473125A09DB800583028 /* ProfileRegistViewController.swift in Sources */,
+				EC1F866F25A4595A00DABBD9 /* CongratulationViewController.swift in Sources */,
 				ECAA013F2522F49F00D15B93 /* AppDelegate.swift in Sources */,
 				ECA7FF3B25A0952F00C4DC2A /* LoginEmaillVCRepresentation.swift in Sources */,
 				EC5B6CDA252721FF004E3B61 /* MainView.swift in Sources */,
@@ -759,6 +766,7 @@
 				EC79BC18258A5B7100D61EEB /* CheckBox.swift in Sources */,
 				EC5CE591258CF5EA00CA24AF /* ReviewVCRepresentation.swift in Sources */,
 				EC6DD81F25401ECB008479C4 /* RoundedBoarderButton.swift in Sources */,
+				EC1F866425A4520300DABBD9 /* FindIdFromEmailViewController.swift in Sources */,
 				EC6DD81A25401E7E008479C4 /* RoundedBoarderView.swift in Sources */,
 				EC33C7842542817F004CBB9A /* Dictionary.swift in Sources */,
 				EC73AAAE258CAE5F005E5615 /* CartCell.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class SelectOptionViewController : UIViewController , UICollectionViewDelegate, UICollectionViewDataSource{
     @IBOutlet weak var fristOptionCollectionView: UICollectionView!
     @IBOutlet weak var secondOptionCollectionView: UICollectionView!
-    @IBOutlet weak var thirdOptionCollectionView: UICollectionView!
+    @IBOutlet weak var selectedOptionLabel: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -23,8 +23,6 @@ class SelectOptionViewController : UIViewController , UICollectionViewDelegate, 
         fristOptionCollectionView.dataSource = self
         secondOptionCollectionView.delegate = self
         secondOptionCollectionView.dataSource = self
-        thirdOptionCollectionView.delegate = self
-        thirdOptionCollectionView.dataSource = self
         
     }
     @IBAction func cloaseBtnAction(_ sender: UIButton) {
@@ -41,12 +39,6 @@ class SelectOptionViewController : UIViewController , UICollectionViewDelegate, 
             let secondOptionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SecondOptionCell", for: indexPath) as! SecondOptionCell
 
             return secondOptionCell
-        }
-
-        else if collectionView == self.thirdOptionCollectionView{
-            let ThirdOptionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ThirdOptionCell", for: indexPath) as! ThirdOptionCell
-
-            return ThirdOptionCell
         }
         else {
             let fristOptionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "FristOptionCell", for: indexPath) as! FristOptionCell

@@ -15,6 +15,7 @@ struct TestUI: View {
     @State private var isPresentedReview: Bool = false
     @State private var isPresentedSelectOption : Bool = false
     @State private var isPresentedLoginEamil : Bool = false
+    @State private var isProduct : Bool = false
     @State private var inputImage : UIImage?
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
@@ -69,6 +70,10 @@ struct TestUI: View {
                     self.isPresentedSelectOption.toggle()
                 }.fullScreenCover(isPresented: self.$isPresentedSelectOption, content:
                                     SelectOptionVCRepresentation.init)
+                Button("Product"){
+                    self.isProduct.toggle()
+                }.fullScreenCover(isPresented: self.$isProduct, content:
+                                    ProductVCRepresentation.init)
                 Button("Back"){
                     self.presentationMode.wrappedValue.dismiss()
                 }

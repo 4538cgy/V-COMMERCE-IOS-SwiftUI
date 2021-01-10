@@ -150,7 +150,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEq-8Z-8bl">
                                         <rect key="frame" x="320" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                        <state key="normal" image="Close"/>
+                                        <state key="normal" image="close"/>
                                         <connections>
                                             <action selector="backButtonAction:" destination="4BS-KW-MmA" eventType="touchUpInside" id="V3s-zE-ILB"/>
                                         </connections>
@@ -231,6 +231,9 @@
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginClick:" destination="4BS-KW-MmA" eventType="touchUpInside" id="4Xi-Lm-Jma"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.78871822359999999" green="0.78883272410000005" blue="0.78869318960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -652,7 +655,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFE-Ir-3dD">
                                         <rect key="frame" x="320" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                        <state key="normal" image="Close"/>
+                                        <state key="normal" image="close"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -858,10 +861,10 @@
         </designable>
     </designables>
     <resources>
-        <image name="Close" width="48" height="48"/>
         <image name="Rectangle 4" width="18.5" height="19"/>
         <image name="btn_signin_facebook.png" width="974" height="105"/>
         <image name="btn_signin_google.png" width="974" height="105"/>
+        <image name="close" width="16" height="16"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
